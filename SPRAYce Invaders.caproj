@@ -9,15 +9,20 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>ocgdf6sggvy5</unique-id>
     <saved-with-version>24300</saved-with-version>
-    <used-plugins />
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
     <used-behaviors />
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="darken">Darken</effect>
+        <effect author="Scirra" id="overlay">Overlay</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>1000</width>
+        <height>1500</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -37,13 +42,124 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="Background" sid="497989149237020">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864776137160788" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\mybadrybad\Desktop\send-rolled-Dark-Grey-Concrete-Wall-Backdrop-vintage-old-cement-wall-Printed-Fabric-Photography-Background-W1217.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="alien" sid="525561549078542">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312213520477263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alien.png">
+                        <collision-poly>
+                            <point x="0.150519" y="0.118529" />
+                            <point x="0.5" y="0.250681" />
+                            <point x="0.83564" y="0.129428" />
+                            <point x="0.851211" y="0.5" />
+                            <point x="0.84083" y="0.874659" />
+                            <point x="0.5" y="0.782016" />
+                            <point x="0.380623" y="0.700273" />
+                            <point x="0.152249" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="alien2_" sid="841721493348912">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752104336267899" speed="5">
+                    <frame duration="1" hotspotX="0.500495" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alien2_1.png">
+                        <collision-poly>
+                            <point x="0.246291" y="0.248503" />
+                            <point x="0.751731" y="0.250499" />
+                            <point x="0.878338" y="0.5" />
+                            <point x="0.688427" y="0.685629" />
+                            <point x="0.499505" y="0.586826" />
+                            <point x="0.308605" y="0.688623" />
+                            <point x="0.10089" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="alien3_" sid="448140132873004">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Overlay">
+                    <effect id="overlay" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747572836132453" speed="5">
+                    <frame duration="1" hotspotX="0.500493" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alien3_1.png">
+                        <collision-poly>
+                            <point x="0.249261" y="0.248039" />
+                            <point x="0.750739" y="0.248039" />
+                            <point x="0.951724" y="0.5" />
+                            <point x="0.759606" y="0.760784" />
+                            <point x="0.499507" y="0.687255" />
+                            <point x="0.247291" y="0.753922" />
+                            <point x="0.0581281" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="alien4_" sid="379300338240606">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Darken">
+                    <effect id="darken" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="463510674894553" speed="5">
+                    <frame duration="1" hotspotX="0.500485" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alien4_1.png">
+                        <collision-poly>
+                            <point x="0.269641" y="0.269903" />
+                            <point x="0.499515" y="0.246602" />
+                            <point x="0.699321" y="0.300971" />
+                            <point x="1" y="0.5" />
+                            <point x="0.809893" y="0.809709" />
+                            <point x="0.499515" y="0.703883" />
+                            <point x="0.191077" y="0.808738" />
+                            <point x="0.00581959" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="833751109149607">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753910889996477" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\player.png">
+                        <collision-poly>
+                            <point x="0.22" y="0.33" />
+                            <point x="0.5" y="0.211667" />
+                            <point x="0.784444" y="0.323333" />
+                            <point x="0.86" y="0.5" />
+                            <point x="0.833333" y="0.75" />
+                            <point x="0.161111" y="0.758333" />
+                            <point x="0.144444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>GameLayout.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Game Sheet.xml</event-sheet>
     </event-folder>
     <global-instances />
     <sounds-folder />
