@@ -23,7 +23,9 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="darken">Darken</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -91,11 +93,11 @@
                     </instance-variables>
                     <animation-folder>
                         <animation framecount="2" loop="1" name="enemy0" pingpong="0" repeatcount="1" repeatto="0" sid="228226399008227" speed="2">
-                            <frame duration="1" hotspotX="0.512862" hotspotY="0.476052" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien1_1.png">
+                            <frame duration="1" hotspotX="0.513333" hotspotY="0.476" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien1_1.png">
                                 <collision-poly>
                                     <point x="0.202572" y="0.195936" />
                                     <point x="0.512862" y="0.184325" />
-                                    <point x="0.733119" y="0.277213" />
+                                    <point x="0.791786" y="0.193213" />
                                     <point x="0.940514" y="0.476052" />
                                     <point x="0.807074" y="0.741655" />
                                     <point x="0.21865" y="0.741655" />
@@ -141,15 +143,15 @@
                             </frame>
                         </animation>
                         <animation framecount="2" loop="1" name="enemy2" pingpong="0" repeatcount="1" repeatto="0" sid="893233750732769" speed="2">
-                            <frame duration="1" hotspotX="0.498513" hotspotY="0.538296" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien3_1.png">
+                            <frame duration="1" hotspotX="0.496531" hotspotY="0.580367" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien3_1.png">
                                 <collision-poly>
-                                    <point x="0.245788" y="0.261057" />
-                                    <point x="0.750248" y="0.261057" />
-                                    <point x="0.952428" y="0.538296" />
-                                    <point x="0.759167" y="0.825243" />
-                                    <point x="0.497522" y="0.744337" />
-                                    <point x="0.243806" y="0.817692" />
-                                    <point x="0.0535183" y="0.538296" />
+                                    <point x="0.242294" y="0.275381" />
+                                    <point x="0.749754" y="0.275381" />
+                                    <point x="0.953136" y="0.580434" />
+                                    <point x="0.758726" y="0.896168" />
+                                    <point x="0.495525" y="0.807145" />
+                                    <point x="0.2403" y="0.88786" />
+                                    <point x="0.0488811" y="0.580434" />
                                 </collision-poly>
                             </frame>
                             <frame duration="1" hotspotX="0.498519" hotspotY="0.55303" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien3_2.png">

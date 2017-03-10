@@ -147,6 +147,17 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="0" name="Call function" sid="271267704672115" type="Function">
+                            <param id="0" name="Name">&quot;SetTimeScale&quot;</param>
+                            <param id="1" name="Parameter {n}">0.1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="414894724516691" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="829219939894405" type="Function">
+                            <param id="0" name="Name">&quot;SetTimeScale&quot;</param>
+                            <param id="1" name="Parameter {n}">1.0</param>
+                        </action>
                         <action id="0" name="Call function" sid="905751237951242" type="Function">
                             <param id="0" name="Name">&quot;SpawnPaintSplatter&quot;</param>
                             <param id="1" name="Parameter {n}">Enemy.EnemyType{###}Enemy.X{###}Enemy.Y{###}round(random(0, 360))</param>
@@ -520,5 +531,38 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="496714340627382">
+            <conditions>
+                <condition id="0" name="On function" sid="930800632243103" type="Function">
+                    <param id="0" name="Name">&quot;SetTimeScale&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-14" name="Set object time scale" sid="916854459117189" type="System">
+                    <param id="0" name="Object">Player</param>
+                    <param id="1" name="Time scale">Function.Param(0)</param>
+                </action>
+                <action id="-14" name="Set object time scale" sid="467144585712253" type="System">
+                    <param id="0" name="Object">Enemy</param>
+                    <param id="1" name="Time scale">Function.Param(0)</param>
+                </action>
+                <action id="-14" name="Set object time scale" sid="976898740175779" type="System">
+                    <param id="0" name="Object">PlayerBullet</param>
+                    <param id="1" name="Time scale">Function.Param(0)</param>
+                </action>
+                <action id="-14" name="Set object time scale" sid="157891104642029" type="System">
+                    <param id="0" name="Object">Enemy1_Bullet</param>
+                    <param id="1" name="Time scale">Function.Param(0)</param>
+                </action>
+                <action id="-14" name="Set object time scale" sid="661889340326540" type="System">
+                    <param id="0" name="Object">Enemy2_Bullet</param>
+                    <param id="1" name="Time scale">Function.Param(0)</param>
+                </action>
+                <action id="-14" name="Set object time scale" sid="500125101393559" type="System">
+                    <param id="0" name="Object">Enemy3_Bullet</param>
+                    <param id="1" name="Time scale">Function.Param(0)</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
