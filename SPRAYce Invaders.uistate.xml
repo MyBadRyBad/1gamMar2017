@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">GameLayout</layout>
-        <event-sheet order="2">Game Sheet</event-sheet>
+        <layout order="1">GameLayout</layout>
+        <event-sheet active="1" order="2">Game Sheet</event-sheet>
+        <event-sheet order="3">Constants</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -24,22 +25,35 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="object-folder/Sprites/" />
         <folder expanded="1" path="object-folder/Sprites/Enemies/" />
+        <folder expanded="0" path="object-folder/Sprites/Player/" />
+        <folder expanded="0" path="object-folder/Sprites/Bullets/" />
+        <folder expanded="1" path="object-folder/Sprites/PaintSplatter/" />
+        <folder expanded="1" path="object-folder/Input/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Enemy1/" />
-        <folder expanded="1" path="animation-folder/Enemy2/" />
-        <folder expanded="1" path="animation-folder/Enemy3/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Background/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Spaceship/" />
+        <folder expanded="1" path="animation-folder/Enemy/" />
+        <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/PlayerBullet/" />
+        <folder expanded="1" path="animation-folder/Enemy1_Bullet/" />
+        <folder expanded="1" path="animation-folder/Enemy2_Bullet/" />
         <folder expanded="1" path="animation-folder/Enemy3_Bullet/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/blue_paint_splatter/" />
+        <folder expanded="1" path="animation-folder/blue_paint_splatter2/" />
+        <folder expanded="1" path="animation-folder/blue_paint_splatter3/" />
+        <folder expanded="1" path="animation-folder/blue_paint_splatter4/" />
+        <folder expanded="1" path="animation-folder/Barrier/" />
+        <folder expanded="1" path="animation-folder/green_paint_splatter/" />
+        <folder expanded="1" path="animation-folder/green_paint_splatter2/" />
+        <folder expanded="1" path="animation-folder/green_paint_splatter3/" />
+        <folder expanded="1" path="animation-folder/green_paint_splatter4/" />
+        <folder expanded="1" path="animation-folder/red_paint_splatter/" />
+        <folder expanded="1" path="animation-folder/red_paint_splatter2/" />
+        <folder expanded="1" path="animation-folder/red_paint_splatter3/" />
+        <folder expanded="1" path="animation-folder/red_paint_splatter4/" />
     </folders-expanded>
 </c2uistate>

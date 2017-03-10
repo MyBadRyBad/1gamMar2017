@@ -10,6 +10,8 @@
     <unique-id>ocgdf6sggvy5</unique-id>
     <saved-with-version>24300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -17,6 +19,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
     </used-behaviors>
@@ -49,101 +52,7 @@
     <object-folder>
         <object-folder name="Sprites">
             <object-folder name="Enemies">
-                <object-type name="Enemy1" sid="214440327712817">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942542655484014" speed="1">
-                            <frame duration="1" hotspotX="0.512862" hotspotY="0.476052" original-source="C:\Users\mybadrybad\Desktop\alien1_1.png">
-                                <image-point name="Imagepoint 1" x="0.5" y="0.500726" />
-                                <collision-poly>
-                                    <point x="0.202572" y="0.195936" />
-                                    <point x="0.512862" y="0.184325" />
-                                    <point x="0.733119" y="0.277213" />
-                                    <point x="0.940514" y="0.476052" />
-                                    <point x="0.807074" y="0.741655" />
-                                    <point x="0.21865" y="0.741655" />
-                                    <point x="0.109325" y="0.476052" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.476974" hotspotY="0.512057" original-source="C:\Users\mybadrybad\Desktop\alien1_2.png">
-                                <collision-poly>
-                                    <point x="0.253289" y="0.319149" />
-                                    <point x="0.476974" y="0.22695" />
-                                    <point x="0.702303" y="0.31773" />
-                                    <point x="0.90625" y="0.512057" />
-                                    <point x="0.884868" y="0.86383" />
-                                    <point x="0.476974" y="0.77305" />
-                                    <point x="0.069079" y="0.86383" />
-                                    <point x="0.0641447" y="0.512057" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Enemy2" sid="307972804906197">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="674730670548015" speed="1">
-                            <frame duration="1" hotspotX="0.50298" hotspotY="0.644781" original-source="C:\Users\mybadrybad\Desktop\alien2_1.png">
-                                <image-point name="Bullet" x="0.493445" y="0.8367" />
-                                <collision-poly>
-                                    <point x="0.196663" y="0.220539" />
-                                    <point x="0.805721" y="0.223906" />
-                                    <point x="0.958284" y="0.644781" />
-                                    <point x="0.72944" y="0.957912" />
-                                    <point x="0.501788" y="0.791246" />
-                                    <point x="0.271752" y="0.962963" />
-                                    <point x="0.0214541" y="0.644781" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.496894" hotspotY="0.641838" original-source="C:\Users\mybadrybad\Desktop\alien2_2.png">
-                                <image-point name="Bullet" x="0.493789" y="0.833597" />
-                                <collision-poly>
-                                    <point x="0.228778" y="0.239303" />
-                                    <point x="0.495859" y="0.177496" />
-                                    <point x="0.758799" y="0.247227" />
-                                    <point x="0.826087" y="0.641838" />
-                                    <point x="0.567288" y="0.743265" />
-                                    <point x="0.495859" y="0.751189" />
-                                    <point x="0.387164" y="0.801902" />
-                                    <point x="0.162526" y="0.641838" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Enemy3" sid="457874566194078">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697753006911643" speed="1">
-                            <frame duration="1" hotspotX="0.500496" hotspotY="0.500539" original-source="C:\Users\mybadrybad\Desktop\alien3_1.png">
-                                <image-point name="Bullet" x="0.494549" y="0.903991" />
-                                <collision-poly>
-                                    <point x="0.245788" y="0.261057" />
-                                    <point x="0.750248" y="0.261057" />
-                                    <point x="0.952428" y="0.538296" />
-                                    <point x="0.759167" y="0.825243" />
-                                    <point x="0.497522" y="0.744337" />
-                                    <point x="0.243806" y="0.817692" />
-                                    <point x="0.0535183" y="0.538296" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.498519" hotspotY="0.55303" original-source="C:\Users\mybadrybad\Desktop\alien3_2.png">
-                                <image-point name="Bullet" x="0.493583" y="0.863636" />
-                                <collision-poly>
-                                    <point x="0.246792" y="0.274892" />
-                                    <point x="0.74926" y="0.274892" />
-                                    <point x="0.939783" y="0.55303" />
-                                    <point x="0.873643" y="0.967532" />
-                                    <point x="0.497532" y="0.760823" />
-                                    <point x="0.122409" y="0.967532" />
-                                    <point x="0.0513327" y="0.55303" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="Sprite4" sid="293211587500929">
+                <object-type name="Spaceship" sid="293211587500929">
                     <plugin id="Sprite" />
                     <animation-folder>
                         <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131801771118855" speed="2">
@@ -151,7 +60,7 @@
                                 <collision-poly>
                                     <point x="0.270087" y="0.102326" />
                                     <point x="0.499516" y="0.0651163" />
-                                    <point x="0.698935" y="0.151938" />
+                                    <point x="0.731849" y="0.0930233" />
                                     <point x="0.999032" y="0.469767" />
                                     <point x="0.809293" y="0.964341" />
                                     <point x="0.499516" y="0.795349" />
@@ -174,220 +83,539 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Enemy" sid="536704171322152">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="MovingLeft" sid="547885239131737" type="boolean" />
+                        <instance-variable name="EnemyType" sid="140096933199022" type="number" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="2" loop="1" name="enemy0" pingpong="0" repeatcount="1" repeatto="0" sid="228226399008227" speed="2">
+                            <frame duration="1" hotspotX="0.512862" hotspotY="0.476052" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien1_1.png">
+                                <collision-poly>
+                                    <point x="0.202572" y="0.195936" />
+                                    <point x="0.512862" y="0.184325" />
+                                    <point x="0.733119" y="0.277213" />
+                                    <point x="0.940514" y="0.476052" />
+                                    <point x="0.807074" y="0.741655" />
+                                    <point x="0.21865" y="0.741655" />
+                                    <point x="0.109325" y="0.476052" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.476974" hotspotY="0.512057" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien1_2.png">
+                                <collision-poly>
+                                    <point x="0.253289" y="0.319149" />
+                                    <point x="0.476974" y="0.22695" />
+                                    <point x="0.702303" y="0.31773" />
+                                    <point x="0.90625" y="0.512057" />
+                                    <point x="0.884868" y="0.86383" />
+                                    <point x="0.476974" y="0.77305" />
+                                    <point x="0.069079" y="0.86383" />
+                                    <point x="0.0641447" y="0.512057" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="1" name="enemy1" pingpong="0" repeatcount="1" repeatto="0" sid="961153727825066" speed="2">
+                            <frame duration="1" hotspotX="0.50298" hotspotY="0.644781" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien2_1.png">
+                                <collision-poly>
+                                    <point x="0.196663" y="0.220539" />
+                                    <point x="0.805721" y="0.223906" />
+                                    <point x="0.958284" y="0.644781" />
+                                    <point x="0.72944" y="0.957912" />
+                                    <point x="0.501788" y="0.791246" />
+                                    <point x="0.271752" y="0.962963" />
+                                    <point x="0.0214541" y="0.644781" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.496894" hotspotY="0.641838" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien2_2.png">
+                                <collision-poly>
+                                    <point x="0.228778" y="0.239303" />
+                                    <point x="0.495859" y="0.177496" />
+                                    <point x="0.758799" y="0.247227" />
+                                    <point x="0.826087" y="0.641838" />
+                                    <point x="0.567288" y="0.743265" />
+                                    <point x="0.495859" y="0.751189" />
+                                    <point x="0.387164" y="0.801902" />
+                                    <point x="0.162526" y="0.641838" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="1" name="enemy2" pingpong="0" repeatcount="1" repeatto="0" sid="893233750732769" speed="2">
+                            <frame duration="1" hotspotX="0.498513" hotspotY="0.538296" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien3_1.png">
+                                <collision-poly>
+                                    <point x="0.245788" y="0.261057" />
+                                    <point x="0.750248" y="0.261057" />
+                                    <point x="0.952428" y="0.538296" />
+                                    <point x="0.759167" y="0.825243" />
+                                    <point x="0.497522" y="0.744337" />
+                                    <point x="0.243806" y="0.817692" />
+                                    <point x="0.0535183" y="0.538296" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.498519" hotspotY="0.55303" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien3_2.png">
+                                <collision-poly>
+                                    <point x="0.246792" y="0.274892" />
+                                    <point x="0.74926" y="0.274892" />
+                                    <point x="0.939783" y="0.55303" />
+                                    <point x="0.873643" y="0.967532" />
+                                    <point x="0.497532" y="0.760823" />
+                                    <point x="0.122409" y="0.967532" />
+                                    <point x="0.0513327" y="0.55303" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
-            <object-type name="Sprite6" sid="650567863136439">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609463974418959" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
+            <object-folder name="Player">
+                <object-type name="Player" sid="124713957690690">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="isFiring" sid="283817834912772" type="boolean" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="8Direction" sid="186377240181139">
+                            <behavior id="EightDir" />
+                        </behavior-type>
+                        <behavior-type name="BulletTimer" sid="394001023897573">
+                            <behavior id="Timer" />
+                        </behavior-type>
+                        <behavior-type name="BoundToLayout" sid="975948617800663">
+                            <behavior id="bound" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653746240604729" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\player.png">
+                                <image-point name="Bullet" x="0.505556" y="0.216667" />
+                                <collision-poly>
+                                    <point x="0.22" y="0.33" />
+                                    <point x="0.5" y="0.211667" />
+                                    <point x="0.784444" y="0.323333" />
+                                    <point x="0.86" y="0.5" />
+                                    <point x="0.833333" y="0.75" />
+                                    <point x="0.161111" y="0.758333" />
+                                    <point x="0.144444" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="Bullets">
+                <object-type name="PlayerBullet" sid="116808515890745">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Bullet" sid="533945346021722">
+                            <behavior id="Bullet" />
+                        </behavior-type>
+                        <behavior-type name="DestroyOutsideLayout" sid="818006670761820">
+                            <behavior id="destroy" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="338899210667670" speed="5">
+                            <frame duration="1" hotspotX="0.448113" hotspotY="0.506098" original-source="C:\Users\mybadrybad\Dropbox\gamedev\player_bullet.png">
+                                <collision-poly>
+                                    <point x="0.15566" y="0.146341" />
+                                    <point x="0.70283" y="0.140244" />
+                                    <point x="0.735849" y="0.853658" />
+                                    <point x="0.150943" y="0.902439" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Enemy1_Bullet" sid="647356730468341">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="202665384115028" speed="5">
+                            <frame duration="1" hotspotX="0.481013" hotspotY="0.454545" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet1.png">
+                                <collision-poly>
+                                    <point x="0.0675097" y="0.136363" />
+                                    <point x="0.476793" y="0.0811689" />
+                                    <point x="0.936709" y="0.100649" />
+                                    <point x="0.675104" y="0.451298" />
+                                    <point x="0.810126" y="0.707792" />
+                                    <point x="0.476793" y="0.954546" />
+                                    <point x="0.143459" y="0.711039" />
+                                    <point x="0.329114" y="0.451298" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.700637" hotspotY="0.437931" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet2.png">
+                                <collision-poly>
+                                    <point x="0.0764319" y="0.0999993" />
+                                    <point x="0.694267" y="0.0310354" />
+                                    <point x="0.88535" y="0.334483" />
+                                    <point x="0.891721" y="0.434482" />
+                                    <point x="0.88535" y="0.537931" />
+                                    <point x="0.694267" y="0.965517" />
+                                    <point x="0.203821" y="0.703449" />
+                                    <point x="0.477705" y="0.434482" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.264901" hotspotY="0.453925" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet3.png">
+                                <collision-poly>
+                                    <point x="0.059601" y="0.348122" />
+                                    <point x="0.258277" y="0.0477816" />
+                                    <point x="0.927152" y="0.109215" />
+                                    <point x="0.483444" y="0.450511" />
+                                    <point x="0.78808" y="0.72355" />
+                                    <point x="0.258277" y="0.941979" />
+                                    <point x="0.059601" y="0.556315" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.700637" hotspotY="0.437931" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet2.png">
+                                <collision-poly>
+                                    <point x="0.0764319" y="0.0999993" />
+                                    <point x="0.694267" y="0.0310354" />
+                                    <point x="0.88535" y="0.334483" />
+                                    <point x="0.891721" y="0.434482" />
+                                    <point x="0.88535" y="0.537931" />
+                                    <point x="0.694267" y="0.965517" />
+                                    <point x="0.203821" y="0.703449" />
+                                    <point x="0.477705" y="0.434482" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Enemy2_Bullet" sid="103522173718821">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443750394664216" speed="5">
+                            <frame duration="1" hotspotX="0.483444" hotspotY="0.505618" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien2_bullet1.png">
+                                <collision-poly>
+                                    <point x="0.245033" y="0.404494" />
+                                    <point x="0.483444" y="0.0280899" />
+                                    <point x="0.927152" y="0.317416" />
+                                    <point x="0.503311" y="0.505618" />
+                                    <point x="0.927152" y="0.69382" />
+                                    <point x="0.483444" y="0.94382" />
+                                    <point x="0.298013" y="0.58427" />
+                                    <point x="0.0794702" y="0.505618" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.412162" hotspotY="0.515337" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien2_bullet2.png">
+                                <collision-poly>
+                                    <point x="0.00675676" y="0.331288" />
+                                    <point x="0.412162" y="0.165644" />
+                                    <point x="0.648649" y="0.407975" />
+                                    <point x="0.871622" y="0.515337" />
+                                    <point x="0.614865" y="0.607362" />
+                                    <point x="0.412162" y="0.837423" />
+                                    <point x="0.00675676" y="0.699386" />
+                                    <point x="0.391892" y="0.515337" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Enemy3_Bullet" sid="155536905551610">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="665086075485749" speed="6">
+                            <frame duration="1" hotspotX="0.458065" hotspotY="0.491228" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet1.png">
+                                <collision-poly>
+                                    <point x="0.245161" y="0.346491" />
+                                    <point x="0.451613" y="0.346491" />
+                                    <point x="0.935484" y="0.162281" />
+                                    <point x="0.535484" y="0.486842" />
+                                    <point x="0.516129" y="0.530702" />
+                                    <point x="0.451613" y="0.907895" />
+                                    <point x="0.0580645" y="0.758772" />
+                                    <point x="0.103226" y="0.486842" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.785714" hotspotY="0.488479" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet3.png">
+                                <collision-poly>
+                                    <point x="0.224489" y="0.235023" />
+                                    <point x="0.77551" y="0.0460824" />
+                                    <point x="0.877552" y="0.442396" />
+                                    <point x="0.877552" y="0.529954" />
+                                    <point x="0.77551" y="0.930876" />
+                                    <point x="0.0816336" y="0.801843" />
+                                    <point x="0.214285" y="0.483871" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.788571" hotspotY="0.466667" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet2.png">
+                                <collision-poly>
+                                    <point x="0.234285" y="0.00476132" />
+                                    <point x="0.782857" y="0.309524" />
+                                    <point x="0.834286" y="0.423809" />
+                                    <point x="0.834286" y="0.504762" />
+                                    <point x="0.782857" y="0.947618" />
+                                    <point x="0.468571" y="0.728572" />
+                                    <point x="0.468571" y="0.461905" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.785714" hotspotY="0.488479" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet3.png">
+                                <collision-poly>
+                                    <point x="0.224489" y="0.235023" />
+                                    <point x="0.77551" y="0.0460824" />
+                                    <point x="0.877552" y="0.442396" />
+                                    <point x="0.877552" y="0.529954" />
+                                    <point x="0.77551" y="0.930876" />
+                                    <point x="0.0816336" y="0.801843" />
+                                    <point x="0.214285" y="0.483871" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="PaintSplatter">
+                <object-type name="blue_paint_splatter" sid="298906527196024">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817283146984826" speed="5">
+                            <frame duration="1" hotspotX="0.500654" hotspotY="0.500673" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter1.png">
+                                <collision-poly>
+                                    <point x="0.326797" y="0.336474" />
+                                    <point x="0.499346" y="0.374159" />
+                                    <point x="0.56732" y="0.445491" />
+                                    <point x="0.611765" y="0.499327" />
+                                    <point x="0.700654" y="0.69179" />
+                                    <point x="0.499346" y="0.756393" />
+                                    <point x="0.392157" y="0.596232" />
+                                    <point x="0.0810458" y="0.499327" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="blue_paint_splatter2" sid="592791752120181">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965261028808370" speed="5">
+                            <frame duration="1" hotspotX="0.45765" hotspotY="0.540816" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter2.png">
+                                <collision-poly>
+                                    <point x="0.226776" y="0.304082" />
+                                    <point x="0.45765" y="0.157143" />
+                                    <point x="0.57377" y="0.389796" />
+                                    <point x="0.79235" y="0.540816" />
+                                    <point x="0.913934" y="0.945918" />
+                                    <point x="0.45765" y="0.828571" />
+                                    <point x="0.353825" y="0.682653" />
+                                    <point x="0.146175" y="0.540816" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="blue_paint_splatter3" sid="751031876211941">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="412599396479990" speed="5">
+                            <frame duration="1" hotspotX="0.454545" hotspotY="0.485089" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter3.png">
+                                <collision-poly>
+                                    <point x="0.387446" y="0.361829" />
+                                    <point x="0.75974" y="0.143141" />
+                                    <point x="0.584416" y="0.485089" />
+                                    <point x="0.541125" y="0.626243" />
+                                    <point x="0.454545" y="0.717694" />
+                                    <point x="0.0541126" y="0.914513" />
+                                    <point x="0.194805" y="0.485089" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="blue_paint_splatter4" sid="784754098228542">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226655414032937" speed="5">
+                            <frame duration="1" hotspotX="0.492199" hotspotY="0.536611" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter4.png">
+                                <collision-poly>
+                                    <point x="0.353191" y="0.403766" />
+                                    <point x="0.49078" y="0.223849" />
+                                    <point x="0.822695" y="0.261506" />
+                                    <point x="0.860993" y="0.535565" />
+                                    <point x="0.763121" y="0.766736" />
+                                    <point x="0.49078" y="0.825314" />
+                                    <point x="0.443972" y="0.601464" />
+                                    <point x="0.00425532" y="0.535565" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="TiledBackground" sid="445704553358736">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\mybadrybad\Desktop\send-rolled-Dark-Grey-Concrete-Wall-Backdrop-vintage-old-cement-wall-Printed-Fabric-Photography-Background-W1217.jpg" />
             </object-type>
         </object-folder>
-        <object-type name="Background" sid="497989149237020">
+        <object-folder name="Input">
+            <object-type name="Touch" sid="781959955858668">
+                <plugin id="Touch" />
+            </object-type>
+        </object-folder>
+        <object-type name="Keyboard" sid="398614490759293">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Barrier" sid="545501916184892">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864776137160788" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\mybadrybad\Desktop\send-rolled-Dark-Grey-Concrete-Wall-Backdrop-vintage-old-cement-wall-Printed-Fabric-Photography-Background-W1217.jpg" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730075572833174" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Touch" sid="781959955858668">
-            <plugin id="Touch" />
-        </object-type>
-        <object-type name="TiledBackground" sid="445704553358736">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\mybadrybad\Desktop\send-rolled-Dark-Grey-Concrete-Wall-Backdrop-vintage-old-cement-wall-Printed-Fabric-Photography-Background-W1217.jpg" />
-        </object-type>
-        <object-type name="Sprite5" sid="124713957690690">
+        <object-type name="green_paint_splatter" sid="406530163389617">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="BoundToLayout" sid="756025029068724">
-                    <behavior id="bound" />
-                </behavior-type>
-                <behavior-type name="8Direction" sid="186377240181139">
-                    <behavior id="EightDir" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653746240604729" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\player.png">
-                        <image-point name="Bullet" x="0.505556" y="0.216667" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534778138728173" speed="5">
+                    <frame duration="1" hotspotX="0.455966" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter1.png">
                         <collision-poly>
-                            <point x="0.22" y="0.33" />
-                            <point x="0.5" y="0.211667" />
-                            <point x="0.784444" y="0.323333" />
-                            <point x="0.86" y="0.5" />
-                            <point x="0.833333" y="0.75" />
-                            <point x="0.161111" y="0.758333" />
-                            <point x="0.144444" y="0.5" />
+                            <point x="0.309659" y="0.315369" />
+                            <point x="0.455966" y="0.269461" />
+                            <point x="0.762784" y="0.202595" />
+                            <point x="0.828125" y="0.5" />
+                            <point x="0.803977" y="0.826347" />
+                            <point x="0.455966" y="0.625749" />
+                            <point x="0.237216" y="0.735529" />
+                            <point x="0.0838068" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="PlayerBullet" sid="116808515890745">
+        <object-type name="green_paint_splatter2" sid="878100619223712">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="533945346021722">
-                    <behavior id="Bullet" />
-                </behavior-type>
-                <behavior-type name="DestroyOutsideLayout" sid="818006670761820">
-                    <behavior id="destroy" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="338899210667670" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Dropbox\gamedev\player_bullet.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696313514446986" speed="5">
+                    <frame duration="1" hotspotX="0.387978" hotspotY="0.49002" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter2.png">
                         <collision-poly>
-                            <point x="0.286667" y="0.286667" />
-                            <point x="0.713333" y="0.286667" />
-                            <point x="0.733333" y="0.5" />
-                            <point x="0.696667" y="0.696667" />
-                            <point x="0.5" y="0.71" />
-                            <point x="0.29" y="0.71" />
-                            <point x="0.226667" y="0.5" />
+                            <point x="0.20765" y="0.253493" />
+                            <point x="0.386612" y="0.250499" />
+                            <point x="0.397541" y="0.377246" />
+                            <point x="0.968579" y="0.489022" />
+                            <point x="0.818306" y="0.909182" />
+                            <point x="0.386612" y="0.668663" />
+                            <point x="0.221311" y="0.715569" />
+                            <point x="0.10929" y="0.489022" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Enemy3_Bullet" sid="155536905551610">
+        <object-type name="green_paint_splatter3" sid="412493949686928">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="665086075485749" speed="6">
-                    <frame duration="1" hotspotX="0.501548" hotspotY="0.501548" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet1.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729709814717088" speed="5">
+                    <frame duration="1" hotspotX="0.46547" hotspotY="0.458629" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter3.png">
                         <collision-poly>
-                            <point x="0.399381" y="0.399381" />
-                            <point x="0.498452" y="0.399381" />
-                            <point x="0.73065" y="0.26935" />
-                            <point x="0.5387" y="0.498452" />
-                            <point x="0.529412" y="0.529412" />
-                            <point x="0.498452" y="0.795666" />
-                            <point x="0.309598" y="0.690402" />
-                            <point x="0.331269" y="0.498452" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.501548" hotspotY="0.501548" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet3.png">
-                        <collision-poly>
-                            <point x="0.331269" y="0.331269" />
-                            <point x="0.498452" y="0.204334" />
-                            <point x="0.529412" y="0.470588" />
-                            <point x="0.529412" y="0.529412" />
-                            <point x="0.498452" y="0.798762" />
-                            <point x="0.287926" y="0.712074" />
-                            <point x="0.328173" y="0.498452" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.501548" hotspotY="0.501548" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet2.png">
-                        <collision-poly>
-                            <point x="0.201238" y="0.201238" />
-                            <point x="0.498452" y="0.399381" />
-                            <point x="0.526316" y="0.473684" />
-                            <point x="0.526316" y="0.526316" />
-                            <point x="0.498452" y="0.814241" />
-                            <point x="0.328173" y="0.671827" />
-                            <point x="0.328173" y="0.498452" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.501548" hotspotY="0.501548" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien3_bullet3.png">
-                        <collision-poly>
-                            <point x="0.331269" y="0.331269" />
-                            <point x="0.498452" y="0.204334" />
-                            <point x="0.529412" y="0.470588" />
-                            <point x="0.529412" y="0.529412" />
-                            <point x="0.498452" y="0.798762" />
-                            <point x="0.287926" y="0.712074" />
-                            <point x="0.328173" y="0.498452" />
+                            <point x="0.399171" y="0.320331" />
+                            <point x="0.464088" y="0.234043" />
+                            <point x="0.69337" y="0.180851" />
+                            <point x="0.707182" y="0.458629" />
+                            <point x="0.558011" y="0.620567" />
+                            <point x="0.464088" y="0.77305" />
+                            <point x="0.149171" y="0.810875" />
+                            <point x="0.342541" y="0.458629" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="103522173718821">
+        <object-type name="green_paint_splatter4" sid="315556872120914">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443750394664216" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien2_bullet1.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503792000056443" speed="5">
+                    <frame duration="1" hotspotX="0.455307" hotspotY="0.505988" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter4.png">
                         <collision-poly>
-                            <point x="0.41" y="0.41" />
-                            <point x="0.5" y="0.075" />
-                            <point x="0.6675" y="0.3325" />
-                            <point x="0.5075" y="0.5" />
-                            <point x="0.6675" y="0.6675" />
-                            <point x="0.5" y="0.89" />
-                            <point x="0.43" y="0.57" />
-                            <point x="0.3475" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien2_bullet2.png">
-                        <collision-poly>
-                            <point x="0.35" y="0.35" />
-                            <point x="0.5" y="0.215" />
-                            <point x="0.5875" y="0.4125" />
-                            <point x="0.67" y="0.5" />
-                            <point x="0.575" y="0.575" />
-                            <point x="0.5" y="0.7625" />
-                            <point x="0.35" y="0.65" />
-                            <point x="0.4925" y="0.5" />
+                            <point x="0.027933" y="0.121756" />
+                            <point x="0.453911" y="0.0179641" />
+                            <point x="0.562849" y="0.349301" />
+                            <point x="0.631285" y="0.505988" />
+                            <point x="0.509776" y="0.62475" />
+                            <point x="0.453911" y="0.592814" />
+                            <point x="0.297486" y="0.697605" />
+                            <point x="0.385475" y="0.505988" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="647356730468341">
+        <object-type name="red_paint_splatter" sid="961584582454937">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="202665384115028" speed="5">
-                    <frame duration="1" hotspotX="0.500911" hotspotY="0.500911" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet1.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415944913144298" speed="5">
+                    <frame duration="1" hotspotX="0.50069" hotspotY="0.469697" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter1.png">
                         <collision-poly>
-                            <point x="0.322404" y="0.322404" />
-                            <point x="0.499089" y="0.291439" />
-                            <point x="0.697632" y="0.302368" />
-                            <point x="0.584699" y="0.499089" />
-                            <point x="0.642987" y="0.642987" />
-                            <point x="0.499089" y="0.781421" />
-                            <point x="0.355191" y="0.644809" />
-                            <point x="0.435337" y="0.499089" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.500911" hotspotY="0.500911" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet2.png">
-                        <collision-poly>
-                            <point x="0.322404" y="0.322404" />
-                            <point x="0.499089" y="0.285975" />
-                            <point x="0.553734" y="0.446266" />
-                            <point x="0.555556" y="0.499089" />
-                            <point x="0.553734" y="0.553734" />
-                            <point x="0.499089" y="0.779599" />
-                            <point x="0.358834" y="0.641166" />
-                            <point x="0.437158" y="0.499089" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.500911" hotspotY="0.500911" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet3.png">
-                        <collision-poly>
-                            <point x="0.444444" y="0.444444" />
-                            <point x="0.499089" y="0.284153" />
-                            <point x="0.68306" y="0.31694" />
-                            <point x="0.56102" y="0.499089" />
-                            <point x="0.644809" y="0.644809" />
-                            <point x="0.499089" y="0.761384" />
-                            <point x="0.444444" y="0.555556" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.500911" hotspotY="0.500911" original-source="C:\Users\mybadrybad\Dropbox\gamedev\alien1_bullet2.png">
-                        <collision-poly>
-                            <point x="0.322404" y="0.322404" />
-                            <point x="0.499089" y="0.285975" />
-                            <point x="0.553734" y="0.446266" />
-                            <point x="0.555556" y="0.499089" />
-                            <point x="0.553734" y="0.553734" />
-                            <point x="0.499089" y="0.779599" />
-                            <point x="0.358834" y="0.641166" />
-                            <point x="0.437158" y="0.499089" />
+                            <point x="0.0234483" y="0.00815851" />
+                            <point x="0.50069" y="0.365967" />
+                            <point x="0.966897" y="0.0174825" />
+                            <point x="0.537931" y="0.468531" />
+                            <point x="0.627586" y="0.634033" />
+                            <point x="0.50069" y="0.867133" />
+                            <point x="0.164138" y="0.811189" />
+                            <point x="0.121379" y="0.468531" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="red_paint_splatter2" sid="784752792534057">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752714804197096" speed="5">
+                    <frame duration="1" hotspotX="0.494536" hotspotY="0.549642" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter2.png">
+                        <collision-poly>
+                            <point x="0.239071" y="0.30911" />
+                            <point x="0.494536" y="0.234391" />
+                            <point x="0.557377" y="0.453429" />
+                            <point x="0.562842" y="0.549642" />
+                            <point x="0.63388" y="0.703173" />
+                            <point x="0.494536" y="0.702149" />
+                            <point x="0.184426" y="0.831116" />
+                            <point x="0.169399" y="0.549642" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="red_paint_splatter3" sid="475918828114682">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="739392552169213" speed="5">
+                    <frame duration="1" hotspotX="0.523196" hotspotY="0.4501" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter3.png">
+                        <collision-poly>
+                            <point x="0.255155" y="0.207585" />
+                            <point x="0.521907" y="0.000998004" />
+                            <point x="0.489691" y="0.44012" />
+                            <point x="0.53866" y="0.449102" />
+                            <point x="0.626289" y="0.56487" />
+                            <point x="0.521907" y="0.656687" />
+                            <point x="0.472938" y="0.522954" />
+                            <point x="0.462629" y="0.449102" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="red_paint_splatter4" sid="838573351172058">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616173095376391" speed="5">
+                    <frame duration="1" hotspotX="0.500513" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter4.png">
+                        <collision-poly>
+                            <point x="0.351795" y="0.310688" />
+                            <point x="0.499487" y="0.222826" />
+                            <point x="0.740513" y="0.229167" />
+                            <point x="0.542564" y="0.5" />
+                            <point x="0.644103" y="0.685688" />
+                            <point x="0.499487" y="0.809783" />
+                            <point x="0.327179" y="0.711051" />
+                            <point x="0.300513" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="162510406767389">
+            <plugin id="Function" />
         </object-type>
     </object-folder>
     <families />
@@ -396,6 +624,7 @@
     </layout-folder>
     <event-folder>
         <event-sheet>Game Sheet.xml</event-sheet>
+        <event-sheet>Constants.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="8">
@@ -403,6 +632,8 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Keyboard" uid="59" />
+        <global-instance type="Function" uid="89" />
     </global-instances>
     <sounds-folder />
     <music-folder />
