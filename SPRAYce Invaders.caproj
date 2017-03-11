@@ -22,6 +22,7 @@
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="darken">Darken</effect>
@@ -90,32 +91,17 @@
                     <instance-variables>
                         <instance-variable name="MovingLeft" sid="547885239131737" type="boolean" />
                         <instance-variable name="EnemyType" sid="140096933199022" type="number" />
+                        <instance-variable name="IsDead" sid="591566855488555" type="boolean" />
                     </instance-variables>
+                    <behaviors>
+                        <behavior-type name="LiteTween" sid="544960282323458">
+                            <behavior id="lunarray_LiteTween" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="2" loop="1" name="enemy0" pingpong="0" repeatcount="1" repeatto="0" sid="228226399008227" speed="2">
-                            <frame duration="1" hotspotX="0.513333" hotspotY="0.476" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien1_1.png">
-                                <collision-poly>
-                                    <point x="0.202572" y="0.195936" />
-                                    <point x="0.512862" y="0.184325" />
-                                    <point x="0.791786" y="0.193213" />
-                                    <point x="0.940514" y="0.476052" />
-                                    <point x="0.807074" y="0.741655" />
-                                    <point x="0.21865" y="0.741655" />
-                                    <point x="0.109325" y="0.476052" />
-                                </collision-poly>
-                            </frame>
-                            <frame duration="1" hotspotX="0.476974" hotspotY="0.512057" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien1_2.png">
-                                <collision-poly>
-                                    <point x="0.253289" y="0.319149" />
-                                    <point x="0.476974" y="0.22695" />
-                                    <point x="0.702303" y="0.31773" />
-                                    <point x="0.90625" y="0.512057" />
-                                    <point x="0.884868" y="0.86383" />
-                                    <point x="0.476974" y="0.77305" />
-                                    <point x="0.069079" y="0.86383" />
-                                    <point x="0.0641447" y="0.512057" />
-                                </collision-poly>
-                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\untitled folder 2\alien1_7.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                         <animation framecount="2" loop="1" name="enemy1" pingpong="0" repeatcount="1" repeatto="0" sid="961153727825066" speed="2">
                             <frame duration="1" hotspotX="0.50298" hotspotY="0.644781" original-source="C:\Users\mybadrybad\Desktop\sprayce invaders\alien2_1.png">
@@ -618,6 +604,28 @@
         </object-type>
         <object-type name="Function" sid="162510406767389">
             <plugin id="Function" />
+        </object-type>
+        <object-type name="paint_blob" sid="321050397199899">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="EnemyType" sid="135390136729395" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LiteTween" sid="879904258343239">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="enemy0" pingpong="0" repeatcount="1" repeatto="0" sid="132727221194802" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="enemy1" pingpong="0" repeatcount="1" repeatto="0" sid="298932441375407" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="enemy2" pingpong="0" repeatcount="1" repeatto="0" sid="336802462905419" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
