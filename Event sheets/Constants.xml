@@ -3,7 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Constants</name>
     <events>
-        <variable constant="1" name="MAX_SPLATTER_COUNT" sid="365483269444365" static="0" type="number">150</variable>
+        <variable constant="0" name="Effects_BPM" sid="186459175866668" static="0" type="number">182</variable>
+        <variable constant="0" name="Sunshine_BPM" sid="137290514968931" static="0" type="number">192</variable>
+        <variable constant="0" name="Reason_BPM" sid="812825716048785" static="0" type="number">190</variable>
+        <variable constant="1" name="MAX_SPLATTER_COUNT" sid="365483269444365" static="0" type="number">200</variable>
         <variable constant="1" name="RED_ENEMY_ID" sid="917573390992033" static="0" type="number">0</variable>
         <variable constant="1" name="BLUE_ENEMY_ID" sid="349705952917335" static="0" type="number">1</variable>
         <variable constant="1" name="GREEN_ENEMY_ID" sid="143380328407333" static="0" type="number">2</variable>

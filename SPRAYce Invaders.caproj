@@ -10,8 +10,11 @@
     <unique-id>ocgdf6sggvy5</unique-id>
     <saved-with-version>24300</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Chris Hackmann (aka linkman2004)" id="MagiCam" version="6.5">MagiCam</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -352,79 +355,111 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
-            <object-folder name="PaintSplatter">
-                <object-type name="blue_paint_splatter" sid="298906527196024">
+            <object-folder name="Paint">
+                <object-type name="PaintSplatter" sid="592791752120181">
                     <plugin id="Sprite" />
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817283146984826" speed="5">
-                            <frame duration="1" hotspotX="0.500654" hotspotY="0.500673" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter1.png">
+                        <animation framecount="1" loop="0" name="splatter00" pingpong="0" repeatcount="1" repeatto="0" sid="965261028808370" speed="5">
+                            <frame duration="1" hotspotX="0.50069" hotspotY="0.469697" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter1.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter01" pingpong="0" repeatcount="1" repeatto="0" sid="668334804944657" speed="5">
+                            <frame duration="1" hotspotX="0.494536" hotspotY="0.549642" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter2.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter02" pingpong="0" repeatcount="1" repeatto="0" sid="228178968169209" speed="5">
+                            <frame duration="1" hotspotX="0.523196" hotspotY="0.4501" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter3.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter03" pingpong="0" repeatcount="1" repeatto="0" sid="733433686068352" speed="5">
+                            <frame duration="1" hotspotX="0.456284" hotspotY="0.484032" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter4.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter10" pingpong="0" repeatcount="1" repeatto="0" sid="816145872881053" speed="5">
+                            <frame duration="1" hotspotX="0.500654" hotspotY="0.500673" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter1.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter11" pingpong="0" repeatcount="1" repeatto="0" sid="203370182577497" speed="5">
+                            <frame duration="1" hotspotX="0.45765" hotspotY="0.540816" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter2.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter12" pingpong="0" repeatcount="1" repeatto="0" sid="698435921278861" speed="5">
+                            <frame duration="1" hotspotX="0.454545" hotspotY="0.485089" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter3.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter13" pingpong="0" repeatcount="1" repeatto="0" sid="484385665995184" speed="5">
+                            <frame duration="1" hotspotX="0.492199" hotspotY="0.536611" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter4.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter20" pingpong="0" repeatcount="1" repeatto="0" sid="583912762350977" speed="5">
+                            <frame duration="1" hotspotX="0.455966" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter1.png">
                                 <collision-poly>
-                                    <point x="0.326797" y="0.336474" />
-                                    <point x="0.499346" y="0.374159" />
-                                    <point x="0.56732" y="0.445491" />
-                                    <point x="0.611765" y="0.499327" />
-                                    <point x="0.700654" y="0.69179" />
-                                    <point x="0.499346" y="0.756393" />
-                                    <point x="0.392157" y="0.596232" />
-                                    <point x="0.0810458" y="0.499327" />
+                                    <point x="0.309659" y="0.315369" />
+                                    <point x="0.455966" y="0.269461" />
+                                    <point x="0.762784" y="0.202595" />
+                                    <point x="0.828125" y="0.5" />
+                                    <point x="0.803977" y="0.826347" />
+                                    <point x="0.455966" y="0.625749" />
+                                    <point x="0.237216" y="0.735529" />
+                                    <point x="0.0838068" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter21" pingpong="0" repeatcount="1" repeatto="0" sid="820358148367972" speed="5">
+                            <frame duration="1" hotspotX="0.387978" hotspotY="0.49002" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter2.png">
+                                <collision-poly>
+                                    <point x="0.20765" y="0.253493" />
+                                    <point x="0.386612" y="0.250499" />
+                                    <point x="0.397541" y="0.377246" />
+                                    <point x="0.968579" y="0.489022" />
+                                    <point x="0.818306" y="0.909182" />
+                                    <point x="0.386612" y="0.668663" />
+                                    <point x="0.221311" y="0.715569" />
+                                    <point x="0.10929" y="0.489022" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter22" pingpong="0" repeatcount="1" repeatto="0" sid="456457394830664" speed="5">
+                            <frame duration="1" hotspotX="0.46547" hotspotY="0.458629" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter3.png">
+                                <collision-poly>
+                                    <point x="0.399171" y="0.320331" />
+                                    <point x="0.464088" y="0.234043" />
+                                    <point x="0.69337" y="0.180851" />
+                                    <point x="0.707182" y="0.458629" />
+                                    <point x="0.558011" y="0.620567" />
+                                    <point x="0.464088" y="0.77305" />
+                                    <point x="0.149171" y="0.810875" />
+                                    <point x="0.342541" y="0.458629" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter23" pingpong="0" repeatcount="1" repeatto="0" sid="288933308964086" speed="5">
+                            <frame duration="1" hotspotX="0.455307" hotspotY="0.505988" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter4.png">
+                                <collision-poly>
+                                    <point x="0.027933" y="0.121756" />
+                                    <point x="0.453911" y="0.0179641" />
+                                    <point x="0.562849" y="0.349301" />
+                                    <point x="0.631285" y="0.505988" />
+                                    <point x="0.509776" y="0.62475" />
+                                    <point x="0.453911" y="0.592814" />
+                                    <point x="0.297486" y="0.697605" />
+                                    <point x="0.385475" y="0.505988" />
                                 </collision-poly>
                             </frame>
                         </animation>
                     </animation-folder>
                 </object-type>
-                <object-type name="blue_paint_splatter2" sid="592791752120181">
+                <object-type name="PaintBlob" sid="321050397199899">
                     <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="EnemyType" sid="135390136729395" type="number" />
+                    </instance-variables>
+                    <behaviors>
+                        <behavior-type name="LiteTween" sid="879904258343239">
+                            <behavior id="lunarray_LiteTween" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965261028808370" speed="5">
-                            <frame duration="1" hotspotX="0.45765" hotspotY="0.540816" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter2.png">
-                                <collision-poly>
-                                    <point x="0.226776" y="0.304082" />
-                                    <point x="0.45765" y="0.157143" />
-                                    <point x="0.57377" y="0.389796" />
-                                    <point x="0.79235" y="0.540816" />
-                                    <point x="0.913934" y="0.945918" />
-                                    <point x="0.45765" y="0.828571" />
-                                    <point x="0.353825" y="0.682653" />
-                                    <point x="0.146175" y="0.540816" />
-                                </collision-poly>
-                            </frame>
+                        <animation framecount="1" loop="0" name="blob0" pingpong="0" repeatcount="1" repeatto="0" sid="132727221194802" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="blue_paint_splatter3" sid="751031876211941">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="412599396479990" speed="5">
-                            <frame duration="1" hotspotX="0.454545" hotspotY="0.485089" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter3.png">
-                                <collision-poly>
-                                    <point x="0.387446" y="0.361829" />
-                                    <point x="0.75974" y="0.143141" />
-                                    <point x="0.584416" y="0.485089" />
-                                    <point x="0.541125" y="0.626243" />
-                                    <point x="0.454545" y="0.717694" />
-                                    <point x="0.0541126" y="0.914513" />
-                                    <point x="0.194805" y="0.485089" />
-                                </collision-poly>
-                            </frame>
+                        <animation framecount="1" loop="0" name="blob1" pingpong="0" repeatcount="1" repeatto="0" sid="298932441375407" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
-                    </animation-folder>
-                </object-type>
-                <object-type name="blue_paint_splatter4" sid="784754098228542">
-                    <plugin id="Sprite" />
-                    <animation-folder>
-                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226655414032937" speed="5">
-                            <frame duration="1" hotspotX="0.492199" hotspotY="0.536611" original-source="C:\Users\mybadrybad\Desktop\paint splatter\blue_paint_splatter4.png">
-                                <collision-poly>
-                                    <point x="0.353191" y="0.403766" />
-                                    <point x="0.49078" y="0.223849" />
-                                    <point x="0.822695" y="0.261506" />
-                                    <point x="0.860993" y="0.535565" />
-                                    <point x="0.763121" y="0.766736" />
-                                    <point x="0.49078" y="0.825314" />
-                                    <point x="0.443972" y="0.601464" />
-                                    <point x="0.00425532" y="0.535565" />
-                                </collision-poly>
-                            </frame>
+                        <animation framecount="1" loop="0" name="blob2" pingpong="0" repeatcount="1" repeatto="0" sid="336802462905419" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -450,182 +485,17 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="green_paint_splatter" sid="406530163389617">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534778138728173" speed="5">
-                    <frame duration="1" hotspotX="0.455966" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter1.png">
-                        <collision-poly>
-                            <point x="0.309659" y="0.315369" />
-                            <point x="0.455966" y="0.269461" />
-                            <point x="0.762784" y="0.202595" />
-                            <point x="0.828125" y="0.5" />
-                            <point x="0.803977" y="0.826347" />
-                            <point x="0.455966" y="0.625749" />
-                            <point x="0.237216" y="0.735529" />
-                            <point x="0.0838068" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="green_paint_splatter2" sid="878100619223712">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="696313514446986" speed="5">
-                    <frame duration="1" hotspotX="0.387978" hotspotY="0.49002" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter2.png">
-                        <collision-poly>
-                            <point x="0.20765" y="0.253493" />
-                            <point x="0.386612" y="0.250499" />
-                            <point x="0.397541" y="0.377246" />
-                            <point x="0.968579" y="0.489022" />
-                            <point x="0.818306" y="0.909182" />
-                            <point x="0.386612" y="0.668663" />
-                            <point x="0.221311" y="0.715569" />
-                            <point x="0.10929" y="0.489022" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="green_paint_splatter3" sid="412493949686928">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729709814717088" speed="5">
-                    <frame duration="1" hotspotX="0.46547" hotspotY="0.458629" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter3.png">
-                        <collision-poly>
-                            <point x="0.399171" y="0.320331" />
-                            <point x="0.464088" y="0.234043" />
-                            <point x="0.69337" y="0.180851" />
-                            <point x="0.707182" y="0.458629" />
-                            <point x="0.558011" y="0.620567" />
-                            <point x="0.464088" y="0.77305" />
-                            <point x="0.149171" y="0.810875" />
-                            <point x="0.342541" y="0.458629" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="green_paint_splatter4" sid="315556872120914">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503792000056443" speed="5">
-                    <frame duration="1" hotspotX="0.455307" hotspotY="0.505988" original-source="C:\Users\mybadrybad\Desktop\paint splatter\green_paint_splatter4.png">
-                        <collision-poly>
-                            <point x="0.027933" y="0.121756" />
-                            <point x="0.453911" y="0.0179641" />
-                            <point x="0.562849" y="0.349301" />
-                            <point x="0.631285" y="0.505988" />
-                            <point x="0.509776" y="0.62475" />
-                            <point x="0.453911" y="0.592814" />
-                            <point x="0.297486" y="0.697605" />
-                            <point x="0.385475" y="0.505988" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="red_paint_splatter" sid="961584582454937">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415944913144298" speed="5">
-                    <frame duration="1" hotspotX="0.50069" hotspotY="0.469697" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter1.png">
-                        <collision-poly>
-                            <point x="0.0234483" y="0.00815851" />
-                            <point x="0.50069" y="0.365967" />
-                            <point x="0.966897" y="0.0174825" />
-                            <point x="0.537931" y="0.468531" />
-                            <point x="0.627586" y="0.634033" />
-                            <point x="0.50069" y="0.867133" />
-                            <point x="0.164138" y="0.811189" />
-                            <point x="0.121379" y="0.468531" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="red_paint_splatter2" sid="784752792534057">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="752714804197096" speed="5">
-                    <frame duration="1" hotspotX="0.494536" hotspotY="0.549642" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter2.png">
-                        <collision-poly>
-                            <point x="0.239071" y="0.30911" />
-                            <point x="0.494536" y="0.234391" />
-                            <point x="0.557377" y="0.453429" />
-                            <point x="0.562842" y="0.549642" />
-                            <point x="0.63388" y="0.703173" />
-                            <point x="0.494536" y="0.702149" />
-                            <point x="0.184426" y="0.831116" />
-                            <point x="0.169399" y="0.549642" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="red_paint_splatter3" sid="475918828114682">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="739392552169213" speed="5">
-                    <frame duration="1" hotspotX="0.523196" hotspotY="0.4501" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter3.png">
-                        <collision-poly>
-                            <point x="0.255155" y="0.207585" />
-                            <point x="0.521907" y="0.000998004" />
-                            <point x="0.489691" y="0.44012" />
-                            <point x="0.53866" y="0.449102" />
-                            <point x="0.626289" y="0.56487" />
-                            <point x="0.521907" y="0.656687" />
-                            <point x="0.472938" y="0.522954" />
-                            <point x="0.462629" y="0.449102" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="red_paint_splatter4" sid="838573351172058">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616173095376391" speed="5">
-                    <frame duration="1" hotspotX="0.500513" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter4.png">
-                        <collision-poly>
-                            <point x="0.351795" y="0.310688" />
-                            <point x="0.499487" y="0.222826" />
-                            <point x="0.740513" y="0.229167" />
-                            <point x="0.542564" y="0.5" />
-                            <point x="0.644103" y="0.685688" />
-                            <point x="0.499487" y="0.809783" />
-                            <point x="0.327179" y="0.711051" />
-                            <point x="0.300513" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Function" sid="162510406767389">
             <plugin id="Function" />
         </object-type>
-        <object-type name="paint_blob" sid="321050397199899">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="EnemyType" sid="135390136729395" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="LiteTween" sid="879904258343239">
-                    <behavior id="lunarray_LiteTween" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="enemy0" pingpong="0" repeatcount="1" repeatto="0" sid="132727221194802" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="enemy1" pingpong="0" repeatcount="1" repeatto="0" sid="298932441375407" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-                <animation framecount="1" loop="0" name="enemy2" pingpong="0" repeatcount="1" repeatto="0" sid="336802462905419" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
+        <object-type name="MagiCam" sid="549904139762583">
+            <plugin id="MagiCam" />
+        </object-type>
+        <object-type name="Audio" sid="377590712459495">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type global="1" name="SplatterArray" sid="268688339970544">
+            <plugin id="Arr" />
         </object-type>
     </object-folder>
     <families />
@@ -644,9 +514,29 @@
         </global-instance>
         <global-instance type="Keyboard" uid="59" />
         <global-instance type="Function" uid="89" />
+        <global-instance type="MagiCam" uid="25" />
+        <global-instance type="Audio" uid="27">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="442198_Reasons___LoveKavi.m4a" />
+        <file name="442198_Reasons___LoveKavi.ogg" />
+        <file name="548676_Drop---LoveKavi.m4a" />
+        <file name="548676_Drop---LoveKavi.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

@@ -27,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Sprites/Enemies/" />
         <folder expanded="0" path="object-folder/Sprites/Player/" />
         <folder expanded="0" path="object-folder/Sprites/Bullets/" />
-        <folder expanded="0" path="object-folder/Sprites/PaintSplatter/" />
+        <folder expanded="1" path="object-folder/Sprites/Paint/" />
         <folder expanded="1" path="object-folder/Input/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
@@ -42,19 +42,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Enemy1_Bullet/" />
         <folder expanded="1" path="animation-folder/Enemy2_Bullet/" />
         <folder expanded="1" path="animation-folder/Enemy3_Bullet/" />
-        <folder expanded="1" path="animation-folder/blue_paint_splatter/" />
-        <folder expanded="1" path="animation-folder/blue_paint_splatter2/" />
-        <folder expanded="1" path="animation-folder/blue_paint_splatter3/" />
-        <folder expanded="1" path="animation-folder/blue_paint_splatter4/" />
+        <folder expanded="1" path="animation-folder/PaintSplatter/" />
+        <folder expanded="1" path="animation-folder/PaintBlob/" />
         <folder expanded="1" path="animation-folder/Barrier/" />
-        <folder expanded="1" path="animation-folder/green_paint_splatter/" />
-        <folder expanded="1" path="animation-folder/green_paint_splatter2/" />
-        <folder expanded="1" path="animation-folder/green_paint_splatter3/" />
-        <folder expanded="1" path="animation-folder/green_paint_splatter4/" />
-        <folder expanded="1" path="animation-folder/red_paint_splatter/" />
-        <folder expanded="1" path="animation-folder/red_paint_splatter2/" />
-        <folder expanded="1" path="animation-folder/red_paint_splatter3/" />
-        <folder expanded="1" path="animation-folder/red_paint_splatter4/" />
-        <folder expanded="1" path="animation-folder/paint_blob/" />
     </folders-expanded>
 </c2uistate>

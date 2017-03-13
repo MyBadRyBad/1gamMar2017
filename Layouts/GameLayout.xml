@@ -15,7 +15,7 @@
     <layers>
         <layer name="Barrier" sid="716489667317333">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>0,0,0</background-color>
             <transparent>1</transparent>
             <parallax>
                 <x>1</x>
@@ -78,7 +78,7 @@
         </layer>
         <layer name="Background" sid="553402810400060">
             <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
+            <background-color>0,0,0</background-color>
             <transparent>0</transparent>
             <parallax>
                 <x>1</x>
@@ -276,7 +276,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="paint_blob" uid="22">
+                <instance type="PaintBlob" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -289,12 +289,12 @@
                     <behavior-instances>
                         <behavior-instance type="LiteTween">
                             <properties>
-                                <active-on-start>Yes</active-on-start>
+                                <active-on-start>No</active-on-start>
                                 <tweened-property>Position</tweened-property>
                                 <function>Linear</function>
                                 <target>100,100</target>
                                 <target-mode>Relative</target-mode>
-                                <duration>0.5</duration>
+                                <duration>0.2</duration>
                                 <enforce-mode>Compromise</enforce-mode>
                             </properties>
                         </behavior-instance>
@@ -302,8 +302,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>176</x>
-                        <y>784</y>
+                        <x>-320</x>
+                        <y>624</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -338,29 +338,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="blue_paint_splatter" uid="77">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-320</x>
-                        <y>512</y>
-                        <z>0</z>
-                        <width>300.786376953</width>
-                        <height>300.8097229</height>
-                        <depth>0</depth>
-                        <hotspotX>0.500653625</hotspotX>
-                        <hotspotY>0.500672936</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="blue_paint_splatter2" uid="78">
+                <instance type="PaintSplatter" uid="78">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -373,233 +351,13 @@
                         <x>-320</x>
                         <y>768</y>
                         <z>0</z>
-                        <width>235.622314453</width>
-                        <height>277.8828125</height>
-                        <depth>0</depth>
-                        <hotspotX>0.457650274</hotspotX>
-                        <hotspotY>0.540816307</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.800000012</opacity>
-                    </world>
-                </instance>
-                <instance type="blue_paint_splatter3" uid="79">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-320</x>
-                        <y>304</y>
-                        <z>0</z>
-                        <width>236.518768311</width>
-                        <height>232.870376587</height>
-                        <depth>0</depth>
-                        <hotspotX>0.454545468</hotspotX>
-                        <hotspotY>0.485089451</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="blue_paint_splatter4" uid="80">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-320</x>
-                        <y>128</y>
-                        <z>0</z>
-                        <width>219.17098999</width>
-                        <height>280.351898193</height>
-                        <depth>0</depth>
-                        <hotspotX>0.492198586</hotspotX>
-                        <hotspotY>0.536610901</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="green_paint_splatter" uid="81">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-336</x>
-                        <y>1008</y>
-                        <z>0</z>
-                        <width>210.526321411</width>
-                        <height>300.600006104</height>
-                        <depth>0</depth>
-                        <hotspotX>0.455965906</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="green_paint_splatter2" uid="82">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-336</x>
-                        <y>1472</y>
-                        <z>0</z>
-                        <width>204.469268799</width>
-                        <height>272.036193848</height>
-                        <depth>0</depth>
-                        <hotspotX>0.387978137</hotspotX>
-                        <hotspotY>0.490019947</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="green_paint_splatter3" uid="83">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-112</x>
-                        <y>1440</y>
-                        <z>0</z>
-                        <width>280.258056641</width>
-                        <height>314.704589844</height>
-                        <depth>0</depth>
-                        <hotspotX>0.465469599</hotspotX>
-                        <hotspotY>0.458628833</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="green_paint_splatter4" uid="84">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-320</x>
-                        <y>1248</y>
-                        <z>0</z>
-                        <width>219.103820801</width>
-                        <height>279.888275146</height>
-                        <depth>0</depth>
-                        <hotspotX>0.455307275</hotspotX>
-                        <hotspotY>0.505988002</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="red_paint_splatter" uid="85">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>1568</y>
-                        <z>0</z>
-                        <width>259.546539307</width>
-                        <height>274.706512451</height>
+                        <width>233.369094849</width>
+                        <height>243.289245605</height>
                         <depth>0</depth>
                         <hotspotX>0.500689626</hotspotX>
                         <hotspotY>0.469696969</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="red_paint_splatter2" uid="86">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>384</x>
-                        <y>1616</y>
-                        <z>0</z>
-                        <width>225</width>
-                        <height>273.41418457</height>
-                        <depth>0</depth>
-                        <hotspotX>0.494535506</hotspotX>
-                        <hotspotY>0.549641788</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="red_paint_splatter3" uid="87">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>560</x>
-                        <y>1616</y>
-                        <z>0</z>
-                        <width>300</width>
-                        <height>400</height>
-                        <depth>0</depth>
-                        <hotspotX>0.523195863</hotspotX>
-                        <hotspotY>0.450099796</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="red_paint_splatter4" uid="88">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>816</x>
-                        <y>1632</y>
-                        <z>0</z>
-                        <width>300</width>
-                        <height>400</height>
-                        <depth>0</depth>
-                        <hotspotX>0.500512838</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.800000012</opacity>
                     </world>
                 </instance>
             </instances>
@@ -2732,6 +2490,14 @@
             </effects>
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="SplatterArray" uid="28">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+    </nonworld-instances>
     <effects />
 </c2layout>

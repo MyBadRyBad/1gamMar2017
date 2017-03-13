@@ -12,18 +12,21 @@
                 <condition id="-2" name="On start of layout" sid="820646670031824" type="System" />
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="689574479153214" type="green_paint_splatter" />
-                <action id="-9" name="Destroy" sid="588616047154481" type="green_paint_splatter2" />
-                <action id="-9" name="Destroy" sid="939090861359648" type="green_paint_splatter3" />
-                <action id="-9" name="Destroy" sid="236199679741634" type="green_paint_splatter4" />
-                <action id="-9" name="Destroy" sid="787381714806467" type="red_paint_splatter" />
-                <action id="-9" name="Destroy" sid="674193959640040" type="red_paint_splatter2" />
-                <action id="-9" name="Destroy" sid="389306164861676" type="red_paint_splatter3" />
-                <action id="-9" name="Destroy" sid="897956467810997" type="red_paint_splatter4" />
-                <action id="-9" name="Destroy" sid="718505828209683" type="blue_paint_splatter" />
-                <action id="-9" name="Destroy" sid="735892962504753" type="blue_paint_splatter2" />
-                <action id="-9" name="Destroy" sid="419930825435551" type="blue_paint_splatter3" />
-                <action id="-9" name="Destroy" sid="294090116976968" type="blue_paint_splatter4" />
+                <action id="-9" name="Destroy" sid="735892962504753" type="PaintSplatter" />
+                <action id="-9" name="Destroy" sid="817083974456999" type="PaintBlob" />
+                <action id="101" name="Create global camera" sid="473662862920717" type="MagiCam">
+                    <param id="0" name="Name">&quot;MainCamera&quot;</param>
+                    <param id="1" name="X">500</param>
+                    <param id="2" name="Y">750</param>
+                    <param id="3" name="Scale">1</param>
+                    <param id="4" name="Active">1</param>
+                </action>
+                <action id="0" name="Play" sid="416625436286807" type="Audio">
+                    <param id="0" name="Audio file">548676_Drop---LoveKavi</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="239667514127032" title="Enemy">
@@ -63,7 +66,7 @@
                                 <event-block sid="452317390348153">
                                     <conditions />
                                     <actions>
-                                        <action id="-11" name="Subtract from" sid="844097021248997" type="System">
+                                        <action disabled="1" id="-11" name="Subtract from" sid="844097021248997" type="System">
                                             <param id="0" name="Variable">EnemyMovementDelay</param>
                                             <param id="1" name="Value">0.1</param>
                                         </action>
@@ -167,7 +170,7 @@
                             <param id="1" name="Parameter {n}">0.1</param>
                         </action>
                         <action id="-16" name="Wait" sid="414894724516691" type="System">
-                            <param id="0" name="Seconds">0.2</param>
+                            <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action id="0" name="Call function" sid="829219939894405" type="Function">
                             <param id="0" name="Name">&quot;SetTimeScale&quot;</param>
@@ -205,57 +208,76 @@
                         <event-block sid="185239776426733">
                             <conditions />
                             <actions>
-                                <action behavior="LiteTween" disabled="1" id="3" name="Set target" sid="300763231177070" type="Enemy">
-                                    <param id="0" name="Target is">1</param>
-                                    <param id="1" name="Relativity">1</param>
-                                    <param id="2" name="Value">-10</param>
-                                </action>
-                                <action behavior="LiteTween" disabled="1" id="10" name="Start" sid="653348576587655" type="Enemy">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">0</param>
-                                </action>
-                                <action disabled="1" id="-13" name="Set boolean" sid="601087635401031" type="Enemy">
-                                    <param id="0" name="Instance variable">IsDead</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Destroy" sid="435555661975110" type="Enemy" />
-                                <action id="-9" name="Destroy" sid="402650112634758" type="PlayerBullet" />
                                 <action id="0" name="Call function" sid="806916875452124" type="Function">
                                     <param id="0" name="Name">&quot;SpawnPaintExplosion&quot;</param>
                                     <param id="1" name="Parameter {n}">Enemy.EnemyType{###}Enemy.X{###}Enemy.Y{###}round(random(5, 10))</param>
                                 </action>
+                                <action id="400" name="Shake camera" sid="920124835751117" type="MagiCam">
+                                    <param id="0" name="Name">&quot;MainCamera&quot;</param>
+                                    <param id="1" name="Strength">30</param>
+                                    <param id="2" name="Max deviation">20</param>
+                                    <param id="3" name="Max zoom deviation">0.25</param>
+                                    <param id="4" name="Build length">0</param>
+                                    <param id="5" name="Drop time">0.2</param>
+                                    <param id="6" name="Duration">0.2</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="435555661975110" type="Enemy" />
+                                <action id="-9" name="Destroy" sid="402650112634758" type="PlayerBullet" />
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block disabled="1" sid="810883191061709">
-                    <conditions>
-                        <condition behavior="LiteTween" id="4" name="On tween end" sid="312650478305663" type="Enemy" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="905751237951242" type="Function">
-                            <param id="0" name="Name">&quot;SpawnPaintSplatter&quot;</param>
-                            <param id="1" name="Parameter {n}">Enemy.EnemyType{###}Enemy.X{###}Enemy.Y{###}round(random(0, 360))</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="258258987399874" type="Enemy" />
-                    </actions>
-                </event-block>
                 <event-block sid="531481434279367">
                     <conditions>
-                        <condition behavior="LiteTween" id="4" name="On tween end" sid="804022834944175" type="paint_blob" />
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="804022834944175" type="PaintBlob" />
                     </conditions>
                     <actions>
                         <action id="0" name="Call function" sid="932927138833598" type="Function">
                             <param id="0" name="Name">&quot;SpawnPaintSplatter&quot;</param>
-                            <param id="1" name="Parameter {n}">paint_blob.EnemyType{###}paint_blob.X{###}paint_blob.Y{###}round(random(0, 360))</param>
+                            <param id="1" name="Parameter {n}">PaintBlob.EnemyType{###}PaintBlob.X{###}PaintBlob.Y{###}round(random(0, 360))</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="833339835949643" type="paint_blob" />
+                        <action id="-9" name="Destroy" sid="833339835949643" type="PaintBlob" />
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="518813958392491" title="Functions">
             <sub-events>
+                <comment>// void SetTimeScale(timeScale)</comment>
+                <event-block sid="496714340627382">
+                    <conditions>
+                        <condition id="0" name="On function" sid="930800632243103" type="Function">
+                            <param id="0" name="Name">&quot;SetTimeScale&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-14" name="Set object time scale" sid="916854459117189" type="System">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Time scale">Function.Param(0)</param>
+                        </action>
+                        <action id="-14" name="Set object time scale" sid="467144585712253" type="System">
+                            <param id="0" name="Object">Enemy</param>
+                            <param id="1" name="Time scale">Function.Param(0)</param>
+                        </action>
+                        <action id="-14" name="Set object time scale" sid="976898740175779" type="System">
+                            <param id="0" name="Object">PlayerBullet</param>
+                            <param id="1" name="Time scale">Function.Param(0)</param>
+                        </action>
+                        <action id="-14" name="Set object time scale" sid="157891104642029" type="System">
+                            <param id="0" name="Object">Enemy1_Bullet</param>
+                            <param id="1" name="Time scale">Function.Param(0)</param>
+                        </action>
+                        <action id="-14" name="Set object time scale" sid="661889340326540" type="System">
+                            <param id="0" name="Object">Enemy2_Bullet</param>
+                            <param id="1" name="Time scale">Function.Param(0)</param>
+                        </action>
+                        <action id="-14" name="Set object time scale" sid="500125101393559" type="System">
+                            <param id="0" name="Object">Enemy3_Bullet</param>
+                            <param id="1" name="Time scale">Function.Param(0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>// void SpawnSplatter(type, xPosition, yPosition, rotation)</comment>
                 <event-block sid="662510485370022">
                     <conditions>
                         <condition id="0" name="On function" sid="844660333832303" type="Function">
@@ -278,33 +300,33 @@
                                     <conditions />
                                     <actions>
                                         <action id="-3" name="Create object" sid="284306530564688" type="System">
-                                            <param id="0" name="Object to create">paint_blob</param>
+                                            <param id="0" name="Object to create">PaintBlob</param>
                                             <param id="1" name="Layer">&quot;Enemy&quot;</param>
                                             <param id="2" name="X">Function.Param(1)</param>
                                             <param id="3" name="Y">Function.Param(2)</param>
                                         </action>
-                                        <action id="4" name="Set animation" sid="283355349936201" type="paint_blob">
-                                            <param id="0" name="Animation">&quot;enemy&quot; &amp; Function.Param(0)</param>
+                                        <action id="4" name="Set animation" sid="283355349936201" type="PaintBlob">
+                                            <param id="0" name="Animation">&quot;blob&quot; &amp; Function.Param(0)</param>
                                             <param id="1" name="From">1</param>
                                         </action>
-                                        <action id="-10" name="Set value" sid="192420239491789" type="paint_blob">
+                                        <action id="-10" name="Set value" sid="192420239491789" type="PaintBlob">
                                             <param id="0" name="Instance variable">EnemyType</param>
                                             <param id="1" name="Value">Function.Param(0)</param>
                                         </action>
-                                        <action behavior="LiteTween" id="3" name="Set target" sid="281733357292316" type="paint_blob">
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="281733357292316" type="PaintBlob">
                                             <param id="0" name="Target is">0</param>
-                                            <param id="1" name="Relativity">1</param>
-                                            <param id="2" name="Value">round(random(-50, 50))</param>
-                                        </action>
-                                        <action behavior="LiteTween" id="3" name="Set target" sid="992340677596608" type="paint_blob">
-                                            <param id="0" name="Target is">1</param>
                                             <param id="1" name="Relativity">1</param>
                                             <param id="2" name="Value">round(random(-100, 100))</param>
                                         </action>
-                                        <action behavior="LiteTween" id="1" name="Set duration" sid="666128608828170" type="paint_blob">
+                                        <action behavior="LiteTween" id="3" name="Set target" sid="992340677596608" type="PaintBlob">
+                                            <param id="0" name="Target is">1</param>
+                                            <param id="1" name="Relativity">1</param>
+                                            <param id="2" name="Value">round(random(-250, 250))</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="1" name="Set duration" sid="666128608828170" type="PaintBlob">
                                             <param id="0" name="Duration">random(0.45, 0.75)</param>
                                         </action>
-                                        <action behavior="LiteTween" id="10" name="Start" sid="501698396024711" type="paint_blob">
+                                        <action behavior="LiteTween" id="10" name="Start" sid="501698396024711" type="PaintBlob">
                                             <param id="0" name="Start Mode">0</param>
                                             <param id="1" name="Force use current">0</param>
                                         </action>
@@ -323,351 +345,31 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="563616104933850">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="607518335583503" type="System">
-                                    <param id="0" name="First value">Function.Param(0)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">RED_ENEMY_ID</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="978048822831899" type="Function">
-                                    <param id="0" name="Name">&quot;SpawnRedPaintSplatter&quot;</param>
-                                    <param id="1" name="Parameter {n}">Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="928459825494197">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="380092054675833" type="System">
-                                    <param id="0" name="First value">Function.Param(0)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">BLUE_ENEMY_ID</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="424436447369235" type="Function">
-                                    <param id="0" name="Name">&quot;SpawnBluePaintSplatter&quot;</param>
-                                    <param id="1" name="Parameter {n}">Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="408945284893371">
-                            <conditions>
-                                <condition id="-8" name="Compare two values" sid="810629927164321" type="System">
-                                    <param id="0" name="First value">Function.Param(0)</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Second value">GREEN_ENEMY_ID</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="643385073904767" type="Function">
-                                    <param id="0" name="Name">&quot;SpawnGreenPaintSplatter&quot;</param>
-                                    <param id="1" name="Parameter {n}">Function.Param(1){###}Function.Param(2){###}Function.Param(3)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>// void SpawnSplatter(xPosition, yPosition, rotation)</comment>
-                <event-block sid="178248093211992">
-                    <conditions>
-                        <condition id="0" name="On function" sid="368708960693975" type="Function">
-                            <param id="0" name="Name">&quot;SpawnRedPaintSplatter&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <variable constant="0" name="RedPaintSplatterIndex" sid="738407397410166" static="0" type="number">0</variable>
-                        <event-block sid="948680804779730">
+                        <variable constant="0" name="PaintSplatterIndex" sid="738407397410166" static="0" type="number">0</variable>
+                        <event-block sid="720747094366870">
                             <conditions />
                             <actions>
-                                <action id="-9" name="Set value" sid="924651309059182" type="System">
-                                    <param id="0" name="Variable">RedPaintSplatterIndex</param>
+                                <action id="-9" name="Set value" sid="841551400178525" type="System">
+                                    <param id="0" name="Variable">PaintSplatterIndex</param>
                                     <param id="1" name="Value">round(random(0, 3))</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="976630596036375">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="356768053415576" type="System">
-                                    <param id="0" name="Variable">RedPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="695613186333326" type="System">
-                                    <param id="0" name="Object to create">red_paint_splatter</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="126461426371907" type="red_paint_splatter">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="317937982335837">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="332147897258329" type="System">
-                                    <param id="0" name="Variable">RedPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="513917656095550" type="System">
-                                    <param id="0" name="Object to create">red_paint_splatter2</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="591984249167138" type="red_paint_splatter2">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="516820883421350">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="782809933214782" type="System">
-                                    <param id="0" name="Variable">RedPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="235088969362482" type="System">
-                                    <param id="0" name="Object to create">red_paint_splatter3</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="473100977237975" type="red_paint_splatter3">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="139417356361300">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="539284129481448" type="System">
-                                    <param id="0" name="Variable">RedPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="230518211721104" type="System">
-                                    <param id="0" name="Object to create">red_paint_splatter4</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="119817111501196" type="red_paint_splatter4">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>// void SpawnSplatter(xPosition, yPosition, rotation)</comment>
-                <event-block sid="178174747538777">
-                    <conditions>
-                        <condition id="0" name="On function" sid="652814380228477" type="Function">
-                            <param id="0" name="Name">&quot;SpawnBluePaintSplatter&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <variable constant="0" name="BluePaintSplatterIndex" sid="542377837600296" static="0" type="number">0</variable>
-                        <event-block sid="110039616251091">
-                            <conditions />
-                            <actions>
-                                <action id="-9" name="Set value" sid="345202880641059" type="System">
-                                    <param id="0" name="Variable">BluePaintSplatterIndex</param>
-                                    <param id="1" name="Value">round(random(0, 3))</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="619464373387642">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="245633851697750" type="System">
-                                    <param id="0" name="Variable">BluePaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="230543594948716" type="System">
-                                    <param id="0" name="Object to create">blue_paint_splatter</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="830296756131475" type="blue_paint_splatter">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="429759962655405">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="459830175404404" type="System">
-                                    <param id="0" name="Variable">BluePaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
                                 <action id="-3" name="Create object" sid="193847116225188" type="System">
-                                    <param id="0" name="Object to create">blue_paint_splatter2</param>
+                                    <param id="0" name="Object to create">PaintSplatter</param>
                                     <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
+                                    <param id="2" name="X">Function.Param(1)</param>
+                                    <param id="3" name="Y">Function.Param(2)</param>
                                 </action>
-                                <action id="-8" name="Set angle" sid="434407175183698" type="blue_paint_splatter2">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
+                                <action id="4" name="Set animation" sid="697409214757411" type="PaintSplatter">
+                                    <param id="0" name="Animation">&quot;splatter&quot; &amp; Function.Param(0) &amp; PaintSplatterIndex</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="502808200019379">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="449911681207323" type="System">
-                                    <param id="0" name="Variable">BluePaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="906489714371480" type="System">
-                                    <param id="0" name="Object to create">blue_paint_splatter3</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
+                                <action id="-8" name="Set angle" sid="434407175183698" type="PaintSplatter">
+                                    <param id="0" name="Angle">Function.Param(3)</param>
                                 </action>
-                                <action id="-8" name="Set angle" sid="913333985265827" type="blue_paint_splatter3">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="896702016388906">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="431148562986097" type="System">
-                                    <param id="0" name="Variable">BluePaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="649780627565986" type="System">
-                                    <param id="0" name="Object to create">blue_paint_splatter4</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="664525389278863" type="blue_paint_splatter4">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <comment>// void SpawnSplatter(xPosition, yPosition, rotation)</comment>
-                <event-block sid="669726220174982">
-                    <conditions>
-                        <condition id="0" name="On function" sid="392278170679691" type="Function">
-                            <param id="0" name="Name">&quot;SpawnGreenPaintSplatter&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <variable constant="0" name="GreenPaintSplatterIndex" sid="426495781970898" static="0" type="number">0</variable>
-                        <event-block sid="884314043765114">
-                            <conditions />
-                            <actions>
-                                <action id="-9" name="Set value" sid="460019691089497" type="System">
-                                    <param id="0" name="Variable">GreenPaintSplatterIndex</param>
-                                    <param id="1" name="Value">round(random(0, 3))</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="642929085529312">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="590590100499072" type="System">
-                                    <param id="0" name="Variable">GreenPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="267021168759246" type="System">
-                                    <param id="0" name="Object to create">green_paint_splatter</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="266486809494253" type="green_paint_splatter">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="518096532280484">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="676683816780031" type="System">
-                                    <param id="0" name="Variable">GreenPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="511603317777441" type="System">
-                                    <param id="0" name="Object to create">green_paint_splatter2</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="300452691233074" type="green_paint_splatter2">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="501348554593008">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="263261611496019" type="System">
-                                    <param id="0" name="Variable">GreenPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="393527210935674" type="System">
-                                    <param id="0" name="Object to create">green_paint_splatter3</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="706228011332160" type="green_paint_splatter3">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="734080524026067">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="501024674884344" type="System">
-                                    <param id="0" name="Variable">GreenPaintSplatterIndex</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-3" name="Create object" sid="840143226715801" type="System">
-                                    <param id="0" name="Object to create">green_paint_splatter4</param>
-                                    <param id="1" name="Layer">&quot;Paint&quot;</param>
-                                    <param id="2" name="X">Function.Param(0)</param>
-                                    <param id="3" name="Y">Function.Param(1)</param>
-                                </action>
-                                <action id="-8" name="Set angle" sid="182165326813382" type="green_paint_splatter4">
-                                    <param id="0" name="Angle">Function.Param(2)</param>
+                                <action id="5" name="Push" sid="380224506684371" type="SplatterArray">
+                                    <param id="0" name="Where">0</param>
+                                    <param id="1" name="Value">PaintSplatter.UID</param>
+                                    <param id="2" name="Axis">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -675,38 +377,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="496714340627382">
-            <conditions>
-                <condition id="0" name="On function" sid="930800632243103" type="Function">
-                    <param id="0" name="Name">&quot;SetTimeScale&quot;</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-14" name="Set object time scale" sid="916854459117189" type="System">
-                    <param id="0" name="Object">Player</param>
-                    <param id="1" name="Time scale">Function.Param(0)</param>
-                </action>
-                <action id="-14" name="Set object time scale" sid="467144585712253" type="System">
-                    <param id="0" name="Object">Enemy</param>
-                    <param id="1" name="Time scale">Function.Param(0)</param>
-                </action>
-                <action id="-14" name="Set object time scale" sid="976898740175779" type="System">
-                    <param id="0" name="Object">PlayerBullet</param>
-                    <param id="1" name="Time scale">Function.Param(0)</param>
-                </action>
-                <action id="-14" name="Set object time scale" sid="157891104642029" type="System">
-                    <param id="0" name="Object">Enemy1_Bullet</param>
-                    <param id="1" name="Time scale">Function.Param(0)</param>
-                </action>
-                <action id="-14" name="Set object time scale" sid="661889340326540" type="System">
-                    <param id="0" name="Object">Enemy2_Bullet</param>
-                    <param id="1" name="Time scale">Function.Param(0)</param>
-                </action>
-                <action id="-14" name="Set object time scale" sid="500125101393559" type="System">
-                    <param id="0" name="Object">Enemy3_Bullet</param>
-                    <param id="1" name="Time scale">Function.Param(0)</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
