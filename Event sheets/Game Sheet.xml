@@ -210,7 +210,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="806916875452124" type="Function">
                                     <param id="0" name="Name">&quot;SpawnPaintExplosion&quot;</param>
-                                    <param id="1" name="Parameter {n}">Enemy.EnemyType{###}Enemy.X{###}Enemy.Y{###}round(random(5, 10))</param>
+                                    <param id="1" name="Parameter {n}">Enemy.EnemyType{###}Enemy.X{###}Enemy.Y{###}round(random(3, 7))</param>
                                 </action>
                                 <action id="400" name="Shake camera" sid="920124835751117" type="MagiCam">
                                     <param id="0" name="Name">&quot;MainCamera&quot;</param>
@@ -237,6 +237,31 @@
                             <param id="1" name="Parameter {n}">PaintBlob.EnemyType{###}PaintBlob.X{###}PaintBlob.Y{###}round(random(0, 360))</param>
                         </action>
                         <action id="-9" name="Destroy" sid="833339835949643" type="PaintBlob" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="657175780061350">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="888729188950096" type="System">
+                                    <param id="0" name="Variable">MAX_SPLATTER_COUNT</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">PaintSplatter.Count</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="962727911678224" type="Function">
+                                    <param id="0" name="Name">&quot;DestroySplatters&quot;</param>
+                                    <param id="1" name="Parameter {n}">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="391395680988420">
+                    <conditions>
+                        <condition behavior="FadeTween" id="4" name="On tween end" sid="858257119598133" type="PaintSplatter" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="367763491302108" type="PaintSplatter" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -372,6 +397,59 @@
                                     <param id="2" name="Axis">0</param>
                                 </action>
                             </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>// void DestroySplatters(count)</comment>
+                <event-block sid="650708185503335">
+                    <conditions>
+                        <condition id="0" name="On function" sid="882505267754753" type="Function">
+                            <param id="0" name="Name">&quot;DestroySplatters&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <variable constant="0" name="SplatterUID" sid="472325793520092" static="0" type="number">0</variable>
+                        <event-block sid="721861324300919">
+                            <conditions>
+                                <condition id="-10" name="For" sid="577354846256510" type="System">
+                                    <param id="0" name="Name">&quot;DestroySplatterLoop&quot;</param>
+                                    <param id="1" name="Start index">1</param>
+                                    <param id="2" name="End index">Function.Param(0)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="732577808635476" type="System">
+                                    <param id="0" name="Variable">SplatterUID</param>
+                                    <param id="1" name="Value">SplatterArray.Front</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="153118090202473">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="212870524007187" type="PaintSplatter">
+                                            <param id="0" name="Unique ID">SplatterUID</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="FadeTween" id="10" name="Start" sid="779112265417971" type="PaintSplatter">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="143802685771219">
+                                            <conditions />
+                                            <actions>
+                                                <action id="6" name="Pop" sid="282781949961836" type="SplatterArray">
+                                                    <param id="0" name="Where">1</param>
+                                                    <param id="1" name="Axis">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>

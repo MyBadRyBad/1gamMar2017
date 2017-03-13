@@ -345,11 +345,24 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="FadeTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>0</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>2</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-320</x>
-                        <y>768</y>
+                        <x>-384</x>
+                        <y>656</y>
                         <z>0</z>
                         <width>233.369094849</width>
                         <height>243.289245605</height>
@@ -2493,7 +2506,7 @@
     <nonworld-instances>
         <instance type="SplatterArray" uid="28">
             <properties>
-                <width>10</width>
+                <width>0</width>
                 <height>1</height>
                 <depth>1</depth>
             </properties>

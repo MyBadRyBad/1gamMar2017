@@ -358,6 +358,11 @@
             <object-folder name="Paint">
                 <object-type name="PaintSplatter" sid="592791752120181">
                     <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="FadeTween" sid="534967214535557">
+                            <behavior id="lunarray_LiteTween" />
+                        </behavior-type>
+                    </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="splatter00" pingpong="0" repeatcount="1" repeatto="0" sid="965261028808370" speed="5">
                             <frame duration="1" hotspotX="0.50069" hotspotY="0.469697" original-source="C:\Users\mybadrybad\Desktop\paint splatter\red_paint_splatter1.png" />
