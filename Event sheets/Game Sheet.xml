@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Sheet</name>
     <events>
+        <variable constant="0" name="BPM" sid="780472202489529" static="0" type="number">0</variable>
+        <variable constant="0" name="QuarterBeat" sid="709202548932259" static="0" type="number">0</variable>
+        <variable constant="0" name="Beat" sid="268364450095339" static="0" type="number">0</variable>
         <include>Constants</include>
         <variable constant="0" name="EnemyMovementX" sid="279816840738825" static="0" type="number">30</variable>
         <variable constant="0" name="EnemyMovementY" sid="488648482265942" static="0" type="number">30</variable>
@@ -25,7 +28,11 @@
                     <param id="0" name="Audio file">548676_Drop---LoveKavi</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;Music&quot;</param>
+                    <param id="1" name="Tag (optional)">MUSIC_TAG</param>
+                </action>
+                <action id="-9" name="Set value" sid="827732835061060" type="System">
+                    <param id="0" name="Variable">BPM</param>
+                    <param id="1" name="Value">Effects_BPM</param>
                 </action>
             </actions>
         </event-block>
@@ -76,13 +83,25 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="850310980444602">
+                <event-block sid="222713868108702">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="190481205221688" type="System">
-                            <param id="0" name="Interval (seconds)">EnemyMovementDelay</param>
+                        <condition id="-8" name="Compare two values" sid="663646045178285" type="System">
+                            <param id="0" name="First value">Audio.PlaybackTime(MUSIC_TAG)</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="886936606925198" type="System">
+                            <param id="0" name="Variable">QuarterBeat</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="959439359644521" type="System" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="974226753715175" type="Enemy">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="831691272340787">
                             <conditions>
@@ -108,6 +127,26 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="213922042074379">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="123652847572793" type="System">
+                            <param id="0" name="First value">Audio.PlaybackTime(MUSIC_TAG)</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="860396982197810" type="System">
+                            <param id="0" name="Variable">QuarterBeat</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="165849124862630" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="425629408908140" type="Enemy">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="533953308322168" title="Player Controls">
@@ -131,7 +170,7 @@
                             <param id="0" name="Angle">270</param>
                         </action>
                         <action behavior="BulletTimer" id="0" name="Start timer" sid="290977534355037" type="Player">
-                            <param id="0" name="Duration">0.75</param>
+                            <param id="0" name="Duration">1.25</param>
                             <param id="1" name="Type">0</param>
                             <param id="2" name="Tag">&quot;PlayerBulletTimer&quot;</param>
                         </action>
@@ -170,7 +209,7 @@
                             <param id="1" name="Parameter {n}">0.1</param>
                         </action>
                         <action id="-16" name="Wait" sid="414894724516691" type="System">
-                            <param id="0" name="Seconds">0.5</param>
+                            <param id="0" name="Seconds">0.25</param>
                         </action>
                         <action id="0" name="Call function" sid="829219939894405" type="Function">
                             <param id="0" name="Name">&quot;SetTimeScale&quot;</param>
@@ -452,6 +491,39 @@
                             </sub-events>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="579344744856599" title="Audio">
+            <sub-events>
+                <event-block sid="207849476029904">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="410163063749096" type="System">
+                            <param id="0" name="First value">Audio.PlaybackTime(MUSIC_TAG)</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">Beat*(60/BPM)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="222105208969706" type="System">
+                            <param id="0" name="Variable">Beat</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="765762686396762" type="System">
+                            <param id="0" name="Variable">QuarterBeat</param>
+                            <param id="1" name="Value">(QuarterBeat + 1) % 4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="281025720278102">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="710632025812736" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="558256395186500" type="DebugText">
+                            <param id="0" name="Text">&quot;Beat: &quot; &amp; Beat &amp; newline &amp; &quot;QuarterBeat: &quot; &amp; QuarterBeat &amp; newline</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
