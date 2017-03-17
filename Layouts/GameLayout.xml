@@ -163,14 +163,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>80</x>
-                        <y>1376</y>
+                        <x>96.429794312</x>
+                        <y>1361.337890625</y>
                         <z>0</z>
-                        <width>90</width>
-                        <height>60</height>
+                        <width>80</width>
+                        <height>64</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.497872353</hotspotX>
+                        <hotspotY>0.547468364</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -357,7 +357,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <EnemyType>0</EnemyType>
+                        <OriginType>0</OriginType>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LiteTween">

@@ -249,7 +249,11 @@
                             <actions>
                                 <action id="0" name="Call function" sid="806916875452124" type="Function">
                                     <param id="0" name="Name">&quot;SpawnPaintExplosion&quot;</param>
-                                    <param id="1" name="Parameter {n}">Enemy.EnemyType{###}Enemy.X{###}Enemy.Y{###}round(random(3, 7))</param>
+                                    <param id="1" name="Parameter {n}">Enemy.EnemyType{###}&quot;Enemy&quot;{###}Enemy.X{###}Enemy.Y{###}round(random(3, 7))</param>
+                                </action>
+                                <action id="0" name="Call function" sid="911512531712714" type="Function">
+                                    <param id="0" name="Name">&quot;SpawnPaintExplosion&quot;</param>
+                                    <param id="1" name="Parameter {n}">PLAYER_ORIGIN_TYPE{###}&quot;Enemy&quot;{###}Enemy.X{###}Enemy.Y{###}round(random(3, 7))</param>
                                 </action>
                                 <action id="400" name="Shake camera" sid="920124835751117" type="MagiCam">
                                     <param id="0" name="Name">&quot;MainCamera&quot;</param>
@@ -273,7 +277,7 @@
                     <actions>
                         <action id="0" name="Call function" sid="932927138833598" type="Function">
                             <param id="0" name="Name">&quot;SpawnPaintSplatter&quot;</param>
-                            <param id="1" name="Parameter {n}">PaintBlob.EnemyType{###}PaintBlob.X{###}PaintBlob.Y{###}round(random(0, 360))</param>
+                            <param id="1" name="Parameter {n}">PaintBlob.OriginType{###}PaintBlob.X{###}PaintBlob.Y{###}round(random(0, 360))</param>
                         </action>
                         <action id="-9" name="Destroy" sid="833339835949643" type="PaintBlob" />
                     </actions>
@@ -341,7 +345,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>// void SpawnSplatter(type, xPosition, yPosition, rotation)</comment>
+                <comment>// void SpawnSplatter(type, layer, xPosition, yPosition, rotation)</comment>
                 <event-block sid="662510485370022">
                     <conditions>
                         <condition id="0" name="On function" sid="844660333832303" type="Function">
@@ -355,7 +359,7 @@
                                 <condition id="-10" name="For" sid="821526719401971" type="System">
                                     <param id="0" name="Name">&quot;SpawnLoop&quot;</param>
                                     <param id="1" name="Start index">0</param>
-                                    <param id="2" name="End index">Function.Param(3)</param>
+                                    <param id="2" name="End index">Function.Param(4)</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -365,16 +369,16 @@
                                     <actions>
                                         <action id="-3" name="Create object" sid="284306530564688" type="System">
                                             <param id="0" name="Object to create">PaintBlob</param>
-                                            <param id="1" name="Layer">&quot;Enemy&quot;</param>
-                                            <param id="2" name="X">Function.Param(1)</param>
-                                            <param id="3" name="Y">Function.Param(2)</param>
+                                            <param id="1" name="Layer">Function.Param(1)</param>
+                                            <param id="2" name="X">Function.Param(2)</param>
+                                            <param id="3" name="Y">Function.Param(3)</param>
                                         </action>
                                         <action id="4" name="Set animation" sid="283355349936201" type="PaintBlob">
                                             <param id="0" name="Animation">&quot;blob&quot; &amp; Function.Param(0)</param>
                                             <param id="1" name="From">1</param>
                                         </action>
                                         <action id="-10" name="Set value" sid="192420239491789" type="PaintBlob">
-                                            <param id="0" name="Instance variable">EnemyType</param>
+                                            <param id="0" name="Instance variable">OriginType</param>
                                             <param id="1" name="Value">Function.Param(0)</param>
                                         </action>
                                         <action behavior="LiteTween" id="3" name="Set target" sid="281733357292316" type="PaintBlob">

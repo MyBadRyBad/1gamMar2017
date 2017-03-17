@@ -178,16 +178,16 @@
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653746240604729" speed="5">
-                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\player.png">
-                                <image-point name="Bullet" x="0.505556" y="0.216667" />
+                            <frame duration="1" hotspotX="0.497872" hotspotY="0.547468" original-source="C:\Users\mybadrybad\Desktop\playter\playership.png">
+                                <image-point name="Bullet" x="0.504255" y="0.107595" />
                                 <collision-poly>
-                                    <point x="0.22" y="0.33" />
-                                    <point x="0.5" y="0.211667" />
-                                    <point x="0.784444" y="0.323333" />
-                                    <point x="0.86" y="0.5" />
-                                    <point x="0.833333" y="0.75" />
-                                    <point x="0.161111" y="0.758333" />
-                                    <point x="0.144444" y="0.5" />
+                                    <point x="0.22217" y="0.375633" />
+                                    <point x="0.501064" y="0.220623" />
+                                    <point x="0.762803" y="0.355801" />
+                                    <point x="0.908511" y="0.588608" />
+                                    <point x="0.8039" y="0.80538" />
+                                    <point x="0.181903" y="0.786656" />
+                                    <point x="0.108511" y="0.582278" />
                                 </collision-poly>
                             </frame>
                         </animation>
@@ -445,12 +445,68 @@
                                 </collision-poly>
                             </frame>
                         </animation>
+                        <animation framecount="1" loop="0" name="splatter40" pingpong="0" repeatcount="1" repeatto="0" sid="456854958741382" speed="5">
+                            <frame duration="1" hotspotX="0.558824" hotspotY="0.454887" original-source="C:\Users\mybadrybad\Desktop\playter\player_splatter1.png">
+                                <collision-poly>
+                                    <point x="0.355615" y="0.109023" />
+                                    <point x="0.558824" y="0.447368" />
+                                    <point x="0.465241" y="0.317669" />
+                                    <point x="0.842246" y="0.454887" />
+                                    <point x="0.382353" y="0.533835" />
+                                    <point x="0.558824" y="0.584586" />
+                                    <point x="0.625668" y="0.610902" />
+                                    <point x="0.0508021" y="0.454887" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter41" pingpong="0" repeatcount="1" repeatto="0" sid="897315295153201" speed="5">
+                            <frame duration="1" hotspotX="0.495298" hotspotY="0.501104" original-source="C:\Users\mybadrybad\Desktop\playter\player_splatter2.png">
+                                <collision-poly>
+                                    <point x="0.492163" y="0.260486" />
+                                    <point x="0.495298" y="0.258278" />
+                                    <point x="0.501567" y="0.258278" />
+                                    <point x="0.827586" y="0.501104" />
+                                    <point x="0.344828" y="0.633554" />
+                                    <point x="0.495298" y="0.836645" />
+                                    <point x="0.510972" y="0.728477" />
+                                    <point x="0.0407524" y="0.501104" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter42" pingpong="0" repeatcount="1" repeatto="0" sid="775429471980433" speed="5">
+                            <frame duration="1" hotspotX="0.468912" hotspotY="0.462547" original-source="C:\Users\mybadrybad\Desktop\playter\player_splatter3.png">
+                                <collision-poly>
+                                    <point x="0.445596" y="0.243446" />
+                                    <point x="0.468912" y="0.198502" />
+                                    <point x="0.588083" y="0.174157" />
+                                    <point x="0.720207" y="0.462547" />
+                                    <point x="0.624352" y="0.777154" />
+                                    <point x="0.468912" y="0.664794" />
+                                    <point x="0.380829" y="0.728464" />
+                                    <point x="0.139896" y="0.462547" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="splatter43" pingpong="0" repeatcount="1" repeatto="0" sid="593661217522922" speed="5">
+                            <frame duration="1" hotspotX="0.769912" hotspotY="0.492239" original-source="C:\Users\mybadrybad\Desktop\playter\player_splatter4.png">
+                                <collision-poly>
+                                    <point x="0.80236" y="0.277162" />
+                                    <point x="0.769912" y="0.487805" />
+                                    <point x="0.831858" y="0.206208" />
+                                    <point x="0.870206" y="0.492239" />
+                                    <point x="0.755162" y="0.720621" />
+                                    <point x="0.769912" y="0.67184" />
+                                    <point x="0.787611" y="0.718404" />
+                                    <point x="0.557522" y="0.492239" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
                     </animation-folder>
                 </object-type>
                 <object-type name="PaintBlob" sid="321050397199899">
                     <plugin id="Sprite" />
                     <instance-variables>
-                        <instance-variable name="EnemyType" sid="135390136729395" type="number" />
+                        <instance-variable name="OriginType" sid="135390136729395" type="number" />
                     </instance-variables>
                     <behaviors>
                         <behavior-type name="LiteTween" sid="879904258343239">
@@ -467,7 +523,7 @@
                         <animation framecount="1" loop="0" name="blob2" pingpong="0" repeatcount="1" repeatto="0" sid="336802462905419" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
-                        <animation framecount="1" loop="0" name="blobPlayer" pingpong="0" repeatcount="1" repeatto="0" sid="423476724701897" speed="5">
+                        <animation framecount="1" loop="0" name="blob4" pingpong="0" repeatcount="1" repeatto="0" sid="423476724701897" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         </animation>
                     </animation-folder>

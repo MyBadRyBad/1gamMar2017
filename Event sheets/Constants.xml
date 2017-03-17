@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Constants</name>
     <events>
+        <variable constant="0" name="PLAYER_ORIGIN_TYPE" sid="938595404152269" static="0" type="number">4</variable>
         <variable constant="1" name="MUSIC_TAG" sid="438338666251933" static="0" type="text">Music</variable>
         <variable constant="0" name="Effects_BPM" sid="186459175866668" static="0" type="number">182</variable>
         <variable constant="0" name="Sunshine_BPM" sid="137290514968931" static="0" type="number">192</variable>
