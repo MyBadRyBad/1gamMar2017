@@ -249,11 +249,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="806916875452124" type="Function">
                                     <param id="0" name="Name">&quot;SpawnPaintExplosion&quot;</param>
-                                    <param id="1" name="Parameter {n}">Enemy.EnemyType{###}&quot;Enemy&quot;{###}Enemy.X{###}Enemy.Y{###}round(random(3, 7))</param>
-                                </action>
-                                <action id="0" name="Call function" sid="911512531712714" type="Function">
-                                    <param id="0" name="Name">&quot;SpawnPaintExplosion&quot;</param>
-                                    <param id="1" name="Parameter {n}">PLAYER_ORIGIN_TYPE{###}&quot;Enemy&quot;{###}Enemy.X{###}Enemy.Y{###}round(random(3, 7))</param>
+                                    <param id="1" name="Parameter {n}">Enemy.EnemyType{###}&quot;Enemy&quot;{###}Enemy.X{###}Enemy.Y{###}-150{###}150{###}-50{###}-250{###}round(random(3, 7))</param>
                                 </action>
                                 <action id="400" name="Shake camera" sid="920124835751117" type="MagiCam">
                                     <param id="0" name="Name">&quot;MainCamera&quot;</param>
@@ -293,7 +289,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="962727911678224" type="Function">
                                     <param id="0" name="Name">&quot;DestroySplatters&quot;</param>
-                                    <param id="1" name="Parameter {n}">10</param>
+                                    <param id="1" name="Parameter {n}">4</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -345,7 +341,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>// void SpawnSplatter(type, layer, xPosition, yPosition, rotation)</comment>
+                <comment>// void SpawnSplatter(type, layer, xPosition, yPosition, xDirectionMin, xDirectionMax, yDirectionMin, yDirectionMax, count)</comment>
                 <event-block sid="662510485370022">
                     <conditions>
                         <condition id="0" name="On function" sid="844660333832303" type="Function">
@@ -359,7 +355,7 @@
                                 <condition id="-10" name="For" sid="821526719401971" type="System">
                                     <param id="0" name="Name">&quot;SpawnLoop&quot;</param>
                                     <param id="1" name="Start index">0</param>
-                                    <param id="2" name="End index">Function.Param(4)</param>
+                                    <param id="2" name="End index">Function.Param(8)</param>
                                 </condition>
                             </conditions>
                             <actions />
@@ -384,15 +380,15 @@
                                         <action behavior="LiteTween" id="3" name="Set target" sid="281733357292316" type="PaintBlob">
                                             <param id="0" name="Target is">0</param>
                                             <param id="1" name="Relativity">1</param>
-                                            <param id="2" name="Value">round(random(-100, 100))</param>
+                                            <param id="2" name="Value">round(random(Function.Param(4), Function.Param(5)))</param>
                                         </action>
                                         <action behavior="LiteTween" id="3" name="Set target" sid="992340677596608" type="PaintBlob">
                                             <param id="0" name="Target is">1</param>
                                             <param id="1" name="Relativity">1</param>
-                                            <param id="2" name="Value">round(random(-250, 250))</param>
+                                            <param id="2" name="Value">round(random(Function.Param(6), Function.Param(7)))</param>
                                         </action>
                                         <action behavior="LiteTween" id="1" name="Set duration" sid="666128608828170" type="PaintBlob">
-                                            <param id="0" name="Duration">random(0.45, 0.75)</param>
+                                            <param id="0" name="Duration">random(0.25, 0.55)</param>
                                         </action>
                                         <action behavior="LiteTween" id="10" name="Start" sid="501698396024711" type="PaintBlob">
                                             <param id="0" name="Start Mode">0</param>
@@ -452,7 +448,6 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <variable constant="0" name="SplatterUID" sid="472325793520092" static="0" type="number">0</variable>
                         <event-block sid="721861324300919">
                             <conditions>
                                 <condition id="-10" name="For" sid="577354846256510" type="System">
@@ -461,13 +456,18 @@
                                     <param id="2" name="End index">Function.Param(0)</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="732577808635476" type="System">
-                                    <param id="0" name="Variable">SplatterUID</param>
-                                    <param id="1" name="Value">SplatterArray.Front</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
+                                <variable constant="0" name="SplatterUID" sid="472325793520092" static="0" type="number">0</variable>
+                                <event-block sid="896649936470573">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="540801869352491" type="System">
+                                            <param id="0" name="Variable">SplatterUID</param>
+                                            <param id="1" name="Value">SplatterArray.Front</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                                 <event-block sid="153118090202473">
                                     <conditions>
                                         <condition id="-14" name="Pick by unique ID" sid="212870524007187" type="PaintSplatter">
@@ -480,17 +480,15 @@
                                             <param id="1" name="Force use current">0</param>
                                         </action>
                                     </actions>
-                                    <sub-events>
-                                        <event-block sid="143802685771219">
-                                            <conditions />
-                                            <actions>
-                                                <action id="6" name="Pop" sid="282781949961836" type="SplatterArray">
-                                                    <param id="0" name="Where">1</param>
-                                                    <param id="1" name="Axis">0</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
+                                </event-block>
+                                <event-block sid="143802685771219">
+                                    <conditions />
+                                    <actions>
+                                        <action id="6" name="Pop" sid="282781949961836" type="SplatterArray">
+                                            <param id="0" name="Where">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -519,7 +517,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="281025720278102">
+                <event-block disabled="1" sid="281025720278102">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="710632025812736" type="System" />
                     </conditions>
