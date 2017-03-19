@@ -225,8 +225,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
-                        <y>1024</y>
+                        <x>-48</x>
+                        <y>992</y>
                         <z>0</z>
                         <width>33.591331482</width>
                         <height>49.411766052</height>
@@ -247,8 +247,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>368</x>
-                        <y>976</y>
+                        <x>-64</x>
+                        <y>784</y>
                         <z>0</z>
                         <width>26.424999237</width>
                         <height>62.299999237</height>
@@ -269,8 +269,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>464</x>
-                        <y>976</y>
+                        <x>-48</x>
+                        <y>880</y>
                         <z>0</z>
                         <width>34.535518646</width>
                         <height>44.881603241</height>
@@ -291,14 +291,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>320</x>
-                        <y>240</y>
+                        <x>688</x>
+                        <y>256</y>
                         <z>0</z>
-                        <width>864</width>
-                        <height>880</height>
+                        <width>389.579162598</width>
+                        <height>314.666656494</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.49777779</hotspotX>
+                        <hotspotY>0.435028255</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -313,14 +313,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>736</x>
+                        <x>272</x>
                         <y>304</y>
                         <z>0</z>
-                        <width>530</width>
-                        <height>530</height>
+                        <width>278.943389893</width>
+                        <height>342.701873779</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.503571451</hotspotX>
+                        <hotspotY>0.587209284</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -424,8 +424,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
-                        <y>864</y>
+                        <x>-48</x>
+                        <y>1104</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -510,7 +510,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
+                        <x>176</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -550,7 +550,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>224</x>
+                        <x>240</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -590,7 +590,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
+                        <x>304</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -630,7 +630,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>352</x>
+                        <x>368</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -670,7 +670,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>416</x>
+                        <x>432</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -710,7 +710,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
+                        <x>496</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -750,7 +750,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
+                        <x>560</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -790,7 +790,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>608</x>
+                        <x>624</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -830,88 +830,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>672</x>
+                        <x>688</x>
                         <y>480</y>
-                        <z>0</z>
-                        <width>75</width>
-                        <height>75</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="12">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>144</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="13">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy0</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>0</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>160</x>
-                        <y>560</y>
                         <z>0</z>
                         <width>75</width>
                         <height>75</height>
@@ -950,7 +870,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>224</x>
+                        <x>176</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -990,7 +910,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>288</x>
+                        <x>304</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1030,7 +950,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>352</x>
+                        <x>240</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1070,7 +990,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
+                        <x>432</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1110,7 +1030,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>544</x>
+                        <x>496</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1150,7 +1070,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>608</x>
+                        <x>560</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1190,7 +1110,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>736</x>
+                        <x>752</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -1230,7 +1150,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>800</x>
+                        <x>816</x>
                         <y>480</y>
                         <z>0</z>
                         <width>75</width>
@@ -1238,246 +1158,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="23">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>240</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="24">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>336</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="26">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>432</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="29">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>240</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="30">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>336</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="31">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>816</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1510,7 +1190,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>416</x>
+                        <x>368</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1550,7 +1230,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>672</x>
+                        <x>624</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1590,7 +1270,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>736</x>
+                        <x>688</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1630,7 +1310,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>800</x>
+                        <x>752</x>
                         <y>560</y>
                         <z>0</z>
                         <width>75</width>
@@ -1638,126 +1318,6 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="36">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>528</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="37">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>624</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="38">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>720</x>
-                        <y>640</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1790,174 +1350,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>144</x>
-                        <y>800</y>
+                        <x>160</x>
+                        <y>784</y>
                         <z>0</z>
                         <width>100.900001526</width>
                         <height>92.700004578</height>
                         <depth>0</depth>
                         <hotspotX>0.496531218</hotspotX>
                         <hotspotY>0.58036679</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="40">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>624</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="42">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>432</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="43">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>528</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="45">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>144</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1990,8 +1390,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>256</x>
-                        <y>800</y>
+                        <x>272</x>
+                        <y>784</y>
                         <z>0</z>
                         <width>100.900001526</width>
                         <height>92.700004578</height>
@@ -2030,8 +1430,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>368</x>
-                        <y>800</y>
+                        <x>160</x>
+                        <y>880</y>
                         <z>0</z>
                         <width>100.900001526</width>
                         <height>92.700004578</height>
@@ -2070,94 +1470,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
-                        <y>800</y>
+                        <x>832</x>
+                        <y>784</y>
                         <z>0</z>
                         <width>100.900001526</width>
                         <height>92.700004578</height>
                         <depth>0</depth>
                         <hotspotX>0.496531218</hotspotX>
                         <hotspotY>0.58036679</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="51">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>720</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Enemy" uid="52">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy1</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <MovingLeft>false</MovingLeft>
-                        <EnemyType>1</EnemyType>
-                        <IsDead>false</IsDead>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>Linear</function>
-                                <target>0, -75</target>
-                                <target-mode>Relative</target-mode>
-                                <duration>0.1</duration>
-                                <enforce-mode>Compromise</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>816</x>
-                        <y>720</y>
-                        <z>0</z>
-                        <width>83.900001526</width>
-                        <height>59.400001526</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502979755</hotspotX>
-                        <hotspotY>0.644781172</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -2190,8 +1510,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>592</x>
-                        <y>800</y>
+                        <x>496</x>
+                        <y>784</y>
                         <z>0</z>
                         <width>100.900001526</width>
                         <height>92.700004578</height>
@@ -2230,8 +1550,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
-                        <y>800</y>
+                        <x>608</x>
+                        <y>784</y>
                         <z>0</z>
                         <width>100.900001526</width>
                         <height>92.700004578</height>
@@ -2270,8 +1590,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>816</x>
-                        <y>800</y>
+                        <x>720</x>
+                        <y>784</y>
                         <z>0</z>
                         <width>100.900001526</width>
                         <height>92.700004578</height>
@@ -2310,7 +1630,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>816</x>
+                        <x>720</x>
                         <y>880</y>
                         <z>0</z>
                         <width>100.900001526</width>
@@ -2350,7 +1670,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
+                        <x>608</x>
                         <y>880</y>
                         <z>0</z>
                         <width>100.900001526</width>
@@ -2390,7 +1710,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>592</x>
+                        <x>496</x>
                         <y>880</y>
                         <z>0</z>
                         <width>100.900001526</width>
@@ -2430,7 +1750,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>480</x>
+                        <x>384</x>
                         <y>880</y>
                         <z>0</z>
                         <width>100.900001526</width>
@@ -2470,7 +1790,47 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>368</x>
+                        <x>384</x>
+                        <y>784</y>
+                        <z>0</z>
+                        <width>100.900001526</width>
+                        <height>92.700004578</height>
+                        <depth>0</depth>
+                        <hotspotX>0.496531218</hotspotX>
+                        <hotspotY>0.58036679</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="24">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy2</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>832</x>
                         <y>880</y>
                         <z>0</z>
                         <width>100.900001526</width>
@@ -2482,10 +1842,130 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="74">
+                <instance type="Enemy" uid="26">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="29">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>enemy2</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>272</x>
+                        <y>880</y>
+                        <z>0</z>
+                        <width>100.900001526</width>
+                        <height>92.700004578</height>
+                        <depth>0</depth>
+                        <hotspotX>0.496531218</hotspotX>
+                        <hotspotY>0.58036679</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="38">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy0</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>0</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>816</x>
+                        <y>560</y>
+                        <z>0</z>
+                        <width>75</width>
+                        <height>75</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="12">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -2511,21 +1991,21 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>256</x>
-                        <y>880</y>
+                        <y>640</y>
                         <z>0</z>
-                        <width>100.900001526</width>
-                        <height>92.700004578</height>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
                         <depth>0</depth>
-                        <hotspotX>0.496531218</hotspotX>
-                        <hotspotY>0.58036679</hotspotY>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Enemy" uid="76">
+                <instance type="Enemy" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>enemy2</initial-animation>
+                        <initial-animation>enemy1</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -2550,14 +2030,534 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>144</x>
-                        <y>880</y>
+                        <x>352</x>
+                        <y>640</y>
                         <z>0</z>
-                        <width>100.900001526</width>
-                        <height>92.700004578</height>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
                         <depth>0</depth>
-                        <hotspotX>0.496531218</hotspotX>
-                        <hotspotY>0.58036679</hotspotY>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="23">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="36">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="37">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>736</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="40">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>832</x>
+                        <y>640</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="42">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>160</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="43">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>256</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="45">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="48">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>448</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="51">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="52">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="53">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>736</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy" uid="63">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>enemy1</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <MovingLeft>false</MovingLeft>
+                        <EnemyType>2</EnemyType>
+                        <IsDead>false</IsDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>Linear</function>
+                                <target>0, -75</target>
+                                <target-mode>Relative</target-mode>
+                                <duration>0.1</duration>
+                                <enforce-mode>Compromise</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>832</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>83.900001526</width>
+                        <height>59.400001526</height>
+                        <depth>0</depth>
+                        <hotspotX>0.502979755</hotspotX>
+                        <hotspotY>0.644781172</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

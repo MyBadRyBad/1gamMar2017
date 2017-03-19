@@ -41,7 +41,7 @@
         </event-block>
         <event-group description="" sid="239667514127032" title="Enemy">
             <sub-events>
-                <event-block sid="710666103572885">
+                <event-block disabled="1" sid="710666103572885">
                     <conditions>
                         <condition id="1" name="Is overlapping another object" sid="306314706609349" type="Enemy">
                             <param id="0" name="Object">Barrier</param>
@@ -50,7 +50,7 @@
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="178788768457611">
+                        <event-block disabled="1" sid="178788768457611">
                             <conditions>
                                 <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="592316754868246" type="Enemy">
                                     <param id="0" name="Instance variable">IsDead</param>
@@ -58,7 +58,7 @@
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="228544283390259">
+                                <event-block disabled="1" sid="228544283390259">
                                     <conditions>
                                         <condition id="-19" name="Pick all" sid="483840163968829" type="System">
                                             <param id="0" name="Object">Enemy</param>
@@ -73,7 +73,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="452317390348153">
+                                <event-block disabled="1" sid="452317390348153">
                                     <conditions />
                                     <actions>
                                         <action disabled="1" id="-11" name="Subtract from" sid="844097021248997" type="System">
@@ -106,7 +106,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="831691272340787">
+                        <event-block disabled="1" sid="831691272340787">
                             <conditions>
                                 <condition id="-8" name="Is boolean instance variable set" sid="790119988111563" type="Enemy">
                                     <param id="0" name="Instance variable">MovingLeft</param>
@@ -118,7 +118,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="260324206187555">
+                        <event-block disabled="1" sid="260324206187555">
                             <conditions>
                                 <condition id="-22" name="Else" sid="193514114256581" type="System" />
                             </conditions>
