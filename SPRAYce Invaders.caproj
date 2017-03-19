@@ -27,6 +27,7 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="darken">Darken</effect>
@@ -158,6 +159,189 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Sprite" sid="760059814712509">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="2" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="715046952303852" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop1.png">
+                                <collision-poly>
+                                    <point x="0.37475" y="0.377778" />
+                                    <point x="0.625251" y="0.377778" />
+                                    <point x="0.725451" y="0.5" />
+                                    <point x="0.703407" y="0.70101" />
+                                    <point x="0.5" y="0.619192" />
+                                    <point x="0.296593" y="0.70101" />
+                                    <point x="0.276553" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop2.png">
+                                <collision-poly>
+                                    <point x="0.405812" y="0.409091" />
+                                    <point x="0.594188" y="0.409091" />
+                                    <point x="0.692385" y="0.5" />
+                                    <point x="0.702405" y="0.7" />
+                                    <point x="0.5" y="0.645455" />
+                                    <point x="0.297595" y="0.7" />
+                                    <point x="0.307615" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="6" loop="0" name="StartHandhop" pingpong="0" repeatcount="1" repeatto="0" sid="244271335414390" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop2.png">
+                                <collision-poly>
+                                    <point x="0.405812" y="0.409091" />
+                                    <point x="0.594188" y="0.409091" />
+                                    <point x="0.692385" y="0.5" />
+                                    <point x="0.702405" y="0.7" />
+                                    <point x="0.5" y="0.645455" />
+                                    <point x="0.297595" y="0.7" />
+                                    <point x="0.307615" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.405812" y="0.409091" />
+                                    <point x="0.594188" y="0.409091" />
+                                    <point x="0.692385" y="0.5" />
+                                    <point x="0.702405" y="0.7" />
+                                    <point x="0.5" y="0.645455" />
+                                    <point x="0.297595" y="0.7" />
+                                    <point x="0.307615" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.405812" y="0.409091" />
+                                    <point x="0.594188" y="0.409091" />
+                                    <point x="0.692385" y="0.5" />
+                                    <point x="0.702405" y="0.7" />
+                                    <point x="0.5" y="0.645455" />
+                                    <point x="0.297595" y="0.7" />
+                                    <point x="0.307615" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0.405812" y="0.409091" />
+                                    <point x="0.594188" y="0.409091" />
+                                    <point x="0.692385" y="0.5" />
+                                    <point x="0.702405" y="0.7" />
+                                    <point x="0.5" y="0.645455" />
+                                    <point x="0.297595" y="0.7" />
+                                    <point x="0.307615" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop5.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.279798" />
+                                    <point x="0.628256" y="0.374747" />
+                                    <point x="0.724449" y="0.5" />
+                                    <point x="0.574148" y="0.570707" />
+                                    <point x="0.5" y="0.667677" />
+                                    <point x="0.329659" y="0.667677" />
+                                    <point x="0.339679" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop6.png">
+                                <collision-poly>
+                                    <point x="0.373747" y="0.376768" />
+                                    <point x="0.626253" y="0.376768" />
+                                    <point x="0.724449" y="0.5" />
+                                    <point x="0.702405" y="0.7" />
+                                    <point x="0.5" y="0.607071" />
+                                    <point x="0.297595" y="0.7" />
+                                    <point x="0.275551" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="1" name="Handhop" pingpong="0" repeatcount="1" repeatto="0" sid="494793897137800" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop7.png">
+                                <collision-poly>
+                                    <point x="0.306613" y="0.309091" />
+                                    <point x="0.5" y="0.375758" />
+                                    <point x="0.691383" y="0.311111" />
+                                    <point x="0.723447" y="0.5" />
+                                    <point x="0.627254" y="0.624242" />
+                                    <point x="0.5" y="0.605051" />
+                                    <point x="0.39479" y="0.60202" />
+                                    <point x="0.274549" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop8.png">
+                                <collision-poly>
+                                    <point x="0.306613" y="0.309091" />
+                                    <point x="0.5" y="0.375758" />
+                                    <point x="0.691383" y="0.311111" />
+                                    <point x="0.723447" y="0.5" />
+                                    <point x="0.627254" y="0.624242" />
+                                    <point x="0.5" y="0.605051" />
+                                    <point x="0.39479" y="0.60202" />
+                                    <point x="0.274549" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop9.png">
+                                <collision-poly>
+                                    <point x="0.370741" y="0.373737" />
+                                    <point x="0.5" y="0.40404" />
+                                    <point x="0.61022" y="0.392929" />
+                                    <point x="0.723447" y="0.5" />
+                                    <point x="0.627254" y="0.624242" />
+                                    <point x="0.5" y="0.636364" />
+                                    <point x="0.362725" y="0.634343" />
+                                    <point x="0.274549" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop8.png">
+                                <collision-poly>
+                                    <point x="0.306613" y="0.309091" />
+                                    <point x="0.5" y="0.375758" />
+                                    <point x="0.691383" y="0.311111" />
+                                    <point x="0.723447" y="0.5" />
+                                    <point x="0.627254" y="0.624242" />
+                                    <point x="0.5" y="0.605051" />
+                                    <point x="0.39479" y="0.60202" />
+                                    <point x="0.274549" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="3" loop="0" name="EndHandhop" pingpong="0" repeatcount="1" repeatto="0" sid="643276955304799" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop6.png">
+                                <collision-poly>
+                                    <point x="0.338677" y="0.341414" />
+                                    <point x="0.5" y="0.39899" />
+                                    <point x="0.691383" y="0.311111" />
+                                    <point x="0.723447" y="0.5" />
+                                    <point x="0.627254" y="0.624242" />
+                                    <point x="0.5" y="0.634343" />
+                                    <point x="0.338677" y="0.658586" />
+                                    <point x="0.274549" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop5.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.279798" />
+                                    <point x="0.628256" y="0.374747" />
+                                    <point x="0.724449" y="0.5" />
+                                    <point x="0.574148" y="0.570707" />
+                                    <point x="0.5" y="0.667677" />
+                                    <point x="0.329659" y="0.667677" />
+                                    <point x="0.339679" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienhandhops\alienhandhop2.png">
+                                <collision-poly>
+                                    <point x="0.405812" y="0.409091" />
+                                    <point x="0.594188" y="0.409091" />
+                                    <point x="0.692385" y="0.5" />
+                                    <point x="0.702405" y="0.7" />
+                                    <point x="0.5" y="0.645455" />
+                                    <point x="0.297595" y="0.7" />
+                                    <point x="0.307615" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-folder name="Player">
                 <object-type name="Player" sid="124713957690690">
@@ -174,6 +358,9 @@
                         </behavior-type>
                         <behavior-type name="BoundToLayout" sid="975948617800663">
                             <behavior id="bound" />
+                        </behavior-type>
+                        <behavior-type name="ScrollTo" sid="448883882568168">
+                            <behavior id="scrollto" />
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
@@ -565,6 +752,301 @@
         <object-type name="DebugText" sid="626456078606381">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite2" sid="748593316800240">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="125279873453099" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin2.png">
+                        <collision-poly>
+                            <point x="0.322642" y="0.322642" />
+                            <point x="0.5" y="0.262264" />
+                            <point x="0.677359" y="0.322642" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.626415" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.254717" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin1.png">
+                        <collision-poly>
+                            <point x="0.324528" y="0.324528" />
+                            <point x="0.5" y="0.264151" />
+                            <point x="0.675472" y="0.324528" />
+                            <point x="0.741509" y="0.5" />
+                            <point x="0.628302" y="0.628302" />
+                            <point x="0.373585" y="0.626415" />
+                            <point x="0.258491" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="14" loop="0" name="StartHeadspin" pingpong="0" repeatcount="1" repeatto="0" sid="224031196133889" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin3.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.735849" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.5" y="0.686792" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.315094" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin4.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.254717" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin5.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.620755" y="0.379245" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.5" y="0.756604" />
+                            <point x="0.311321" y="0.688679" />
+                            <point x="0.254717" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin7.png">
+                        <collision-poly>
+                            <point x="0.432075" y="0.432075" />
+                            <point x="0.5" y="0.254717" />
+                            <point x="0.558491" y="0.441509" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.679245" y="0.679245" />
+                            <point x="0.5" y="0.745283" />
+                            <point x="0.316981" y="0.683019" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin8.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.743396" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin9.png">
+                        <collision-poly>
+                            <point x="0.437736" y="0.437736" />
+                            <point x="0.5" y="0.25283" />
+                            <point x="0.558491" y="0.441509" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.698113" y="0.698113" />
+                            <point x="0.5" y="0.745283" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.241509" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin6.png">
+                        <collision-poly>
+                            <point x="0.375472" y="0.375472" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.622642" y="0.377358" />
+                            <point x="0.737736" y="0.5" />
+                            <point x="0.688679" y="0.688679" />
+                            <point x="0.5" y="0.749057" />
+                            <point x="0.254717" y="0.745283" />
+                            <point x="0.241509" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin4.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.254717" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin5.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.620755" y="0.379245" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.5" y="0.756604" />
+                            <point x="0.311321" y="0.688679" />
+                            <point x="0.254717" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin7.png">
+                        <collision-poly>
+                            <point x="0.432075" y="0.432075" />
+                            <point x="0.5" y="0.254717" />
+                            <point x="0.558491" y="0.441509" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.679245" y="0.679245" />
+                            <point x="0.5" y="0.745283" />
+                            <point x="0.316981" y="0.683019" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin8.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.743396" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin9.png">
+                        <collision-poly>
+                            <point x="0.437736" y="0.437736" />
+                            <point x="0.5" y="0.25283" />
+                            <point x="0.558491" y="0.441509" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.698113" y="0.698113" />
+                            <point x="0.5" y="0.745283" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.241509" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin6.png">
+                        <collision-poly>
+                            <point x="0.375472" y="0.375472" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.622642" y="0.377358" />
+                            <point x="0.737736" y="0.5" />
+                            <point x="0.688679" y="0.688679" />
+                            <point x="0.5" y="0.749057" />
+                            <point x="0.254717" y="0.745283" />
+                            <point x="0.241509" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin4.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.739623" y="0.739623" />
+                            <point x="0.256604" y="0.743396" />
+                            <point x="0.254717" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="8" loop="1" name="Headspin" pingpong="0" repeatcount="1" repeatto="0" sid="624313442487484" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin10.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.618868" y="0.381132" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.749057" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin12.png">
+                        <collision-poly>
+                            <point x="0.437736" y="0.437736" />
+                            <point x="0.5" y="0.262264" />
+                            <point x="0.566038" y="0.433962" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.679245" y="0.679245" />
+                            <point x="0.5" y="0.75283" />
+                            <point x="0.316981" y="0.683019" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin15.png">
+                        <collision-poly>
+                            <point x="0.377358" y="0.377358" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.74717" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin13.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.745283" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin10.png">
+                        <collision-poly>
+                            <point x="0.379245" y="0.379245" />
+                            <point x="0.5" y="0.381132" />
+                            <point x="0.681132" y="0.318868" />
+                            <point x="0.741509" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.743396" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.258491" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin14.png">
+                        <collision-poly>
+                            <point x="0.422642" y="0.422642" />
+                            <point x="0.5" y="0.262264" />
+                            <point x="0.558491" y="0.441509" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.75283" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin15.png">
+                        <collision-poly>
+                            <point x="0.377358" y="0.377358" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.74717" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\mybadrybad\Desktop\alienheadspin\alienheadspin16.png">
+                        <collision-poly>
+                            <point x="0.316981" y="0.316981" />
+                            <point x="0.5" y="0.383019" />
+                            <point x="0.679245" y="0.320755" />
+                            <point x="0.739623" y="0.5" />
+                            <point x="0.684906" y="0.684906" />
+                            <point x="0.5" y="0.745283" />
+                            <point x="0.315094" y="0.684906" />
+                            <point x="0.256604" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="EndHeadspin" pingpong="0" repeatcount="1" repeatto="0" sid="494120559337357" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -606,6 +1088,10 @@
         <file name="548676_Drop---LoveKavi.ogg" />
         <file name="451669_An_Effect___LoveKavi.m4a" />
         <file name="451669_An_Effect___LoveKavi.ogg" />
+        <file name="James Brown feat Dead Prez - I feel Good with this Hip Hop (Basement Freaks Mush Up).m4a" />
+        <file name="James Brown feat Dead Prez - I feel Good with this Hip Hop (Basement Freaks Mush Up).ogg" />
+        <file name="OI5imI5JnaO1.128.m4a" />
+        <file name="OI5imI5JnaO1.128.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

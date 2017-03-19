@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game Sheet</name>
     <events>
+        <variable constant="0" name="GreenBossAnimation" sid="540585552022634" static="0" type="number">0</variable>
+        <variable constant="0" name="RedBossAnimation" sid="664093137423789" static="0" type="number">0</variable>
+        <variable constant="0" name="percentage" sid="781195218656315" static="0" type="number">0</variable>
         <variable constant="0" name="BPM" sid="780472202489529" static="0" type="number">0</variable>
         <variable constant="0" name="QuarterBeat" sid="709202548932259" static="0" type="number">0</variable>
         <variable constant="0" name="Beat" sid="268364450095339" static="0" type="number">0</variable>
@@ -25,14 +28,14 @@
                     <param id="4" name="Active">1</param>
                 </action>
                 <action id="0" name="Play" sid="416625436286807" type="Audio">
-                    <param id="0" name="Audio file">548676_Drop---LoveKavi</param>
+                    <param id="0" name="Audio file">OI5imI5JnaO1.128</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">MUSIC_TAG</param>
                 </action>
                 <action id="-9" name="Set value" sid="827732835061060" type="System">
                     <param id="0" name="Variable">BPM</param>
-                    <param id="1" name="Value">Effects_BPM</param>
+                    <param id="1" name="Value">LEAVING_BPM * 2</param>
                 </action>
             </actions>
         </event-block>
@@ -515,6 +518,14 @@
                             <param id="0" name="Variable">QuarterBeat</param>
                             <param id="1" name="Value">(QuarterBeat + 1) % 4</param>
                         </action>
+                        <action id="0" name="Call function" sid="279712022584350" type="Function">
+                            <param id="0" name="Name">&quot;IncrementGreenBossAnimation&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="507718207585856" type="Function">
+                            <param id="0" name="Name">&quot;IncrementRedBossAnimation&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block disabled="1" sid="281025720278102">
@@ -529,5 +540,168 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="882564428912115">
+            <conditions>
+                <condition id="0" name="On function" sid="690439048670363" type="Function">
+                    <param id="0" name="Name">&quot;IncrementGreenBossAnimation&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="211445880502374">
+                    <conditions />
+                    <actions>
+                        <action id="-10" name="Add to" sid="379729222580777" type="System">
+                            <param id="0" name="Variable">GreenBossAnimation</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="473276128494501">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="586338893810838" type="System">
+                            <param id="0" name="Variable">GreenBossAnimation</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Sprite.AnimationFrameCount</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="888009377174658" type="System">
+                            <param id="0" name="Variable">GreenBossAnimation</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="357786850548580">
+                    <conditions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="734037641088203" type="Sprite">
+                            <param id="0" name="Frame number">GreenBossAnimation</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="531420586997949">
+            <conditions>
+                <condition id="0" name="On function" sid="507148207558274" type="Function">
+                    <param id="0" name="Name">&quot;IncrementRedBossAnimation&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="231708025750578">
+                    <conditions />
+                    <actions>
+                        <action id="-10" name="Add to" sid="854669949519140" type="System">
+                            <param id="0" name="Variable">RedBossAnimation</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="739632029122461">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="683599093752573" type="System">
+                            <param id="0" name="Variable">RedBossAnimation</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Sprite2.AnimationFrameCount</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="676113586520025" type="System">
+                            <param id="0" name="Variable">RedBossAnimation</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="481999029489558">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="121571494465586" type="System">
+                            <param id="0" name="First value">Sprite2.AnimationSpeed</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="574217742891813" type="Sprite2">
+                            <param id="0" name="Frame number">RedBossAnimation</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="820271590296860">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="362766661863311" type="System">
+                    <param id="0" name="Variable">Beat</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">32</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="988993318433824" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="127713612237467" type="System">
+                    <param id="0" name="Variable">GreenBossAnimation</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="947141358386139" type="Sprite">
+                    <param id="0" name="Animation">&quot;Handhop&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="666594909144407">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="742308872037467" type="System">
+                    <param id="0" name="Variable">Beat</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">62</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="235480548608925" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="387197847622497" type="System">
+                    <param id="0" name="Variable">GreenBossAnimation</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="884208136378890" type="Sprite2">
+                    <param id="0" name="Animation">&quot;StartHeadspin&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="974534163558940">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="157767158879833" type="System">
+                    <param id="0" name="Variable">Beat</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">26</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="554662493430720" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="588580430699609" type="System">
+                    <param id="0" name="Variable">GreenBossAnimation</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="353971620927862" type="Sprite">
+                    <param id="0" name="Animation">&quot;StartHandhop&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="327334719464469">
+            <conditions>
+                <condition id="4" name="On finished" sid="257211031951107" type="Sprite2">
+                    <param id="0" name="Animation">&quot;StartHeadspin&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="356768837634943" type="Sprite2">
+                    <param id="0" name="Animation">&quot;Headspin&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
